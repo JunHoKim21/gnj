@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>상담 · 예약 · FAQ | 강남J비뇨기과</title>
+  <meta name="description" content="강남J비뇨기과 수술상담(Meet the expert), 비용문의, 온라인예약 및 자주 묻는 질문(FAQ)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/common.css" />
+</head>
+<body>
+  <div id="progress_bar"></div>
+  <div class="gnj-top-notice" id="topNotice">
+    <a href="consult.html" class="gnj-top-notice__link">1999년부터 지켜온 프라이버시 · 학동역 8·9번 출구 사이 강남J비뇨기과 (예약·상담 02-3018-7575) →</a>
+    <div class="gnj-top-notice__actions"><button type="button" class="gnj-top-notice__hide-today" id="hideNoticeToday">오늘 하루 보지 않기</button><button type="button" class="gnj-top-notice__close" id="closeNotice">×</button></div>
+  </div>
+  <header id="gnj-hd">
+    <div class="gnj-hd-inner">
+      <a href="../index2.html" class="gnj-logo"><img src="../../assets/img/common_logo.png" alt="강남J비뇨기과" /></a>
+            <nav class="gnj-nav" aria-label="주요 메뉴">
+        <div class="gnj-nav-item">
+          <a href="hospital.html" class="gnj-a">병원소개</a>
+          <div class="gnj-more-menu">
+            <a href="hospital.html?tab=doctors">의료진 소개</a>
+            <a href="hospital.html?tab=hours">진료안내</a>
+            <a href="hospital.html?tab=tour">병원 둘러보기</a>
+            <a href="hospital.html?tab=educator">교육자 박천진</a>
+            <a href="hospital.html?tab=press">언론보도자료</a>
+            <a href="hospital.html?tab=activity">대외활동</a>
+            <a href="hospital.html?tab=video">VIDEO GALLERY</a>
+            <a href="hospital.html?tab=location">찾아오시는 길</a>
+            <a href="hospital.html?tab=nonbenefit">비급여비용안내</a>
+          </div>
+        </div>
+        <div class="gnj-nav-item">
+          <a href="stone.html" class="gnj-a">요로결석</a>
+          <div class="gnj-more-menu">
+            <a href="stone.html?tab=cause">요로결석 원인 증상</a>
+            <a href="stone.html?tab=diagnosis">요로결석 진단</a>
+            <a href="stone.html?tab=treatment">요로결석 치료</a>
+          </div>
+        </div>
+        <div class="gnj-nav-item"><a href="implant.html" class="gnj-a">음경임플란트</a></div>
+        <div class="gnj-nav-item">
+          <a href="prostate.html" class="gnj-a">전립선</a>
+          <div class="gnj-more-menu">
+            <a href="prostate.html?tab=bph">전립선 · 전립선비대증</a>
+            <a href="prostate.html?tab=holep">HoLEP시술 · 유로리프트</a>
+            <a href="prostate.html?tab=etc">전립선염 · 전립선암 · 전립선통</a>
+          </div>
+        </div>
+        <div class="gnj-nav-item">
+          <a href="aesthetics.html" class="gnj-a">남성성형</a>
+          <div class="gnj-more-menu">
+            <a href="aesthetics.html?tab=enlargement">귀두확대술 · 음경굵기확대술</a>
+            <a href="aesthetics.html?tab=length">음경길이연장술 · 함몰음경</a>
+            <a href="aesthetics.html?tab=foreign">음경이물질제거</a>
+            <a href="aesthetics.html?tab=curvature">음경만곡증</a>
+          </div>
+        </div>
+        <div class="gnj-nav-item">
+          <a href="sexual.html" class="gnj-a">성기능장애</a>
+          <div class="gnj-more-menu">
+            <a href="sexual.html?tab=pe">조루증 (원인/진단/치료)</a>
+            <a href="sexual.html?tab=ed">발기부전 · 성기능검사 · 치료</a>
+          </div>
+        </div>
+        <div class="gnj-nav-item">
+          <a href="vasectomy.html" class="gnj-a">정관수술</a>
+          <div class="gnj-more-menu">
+            <a href="vasectomy.html?tab=vasectomy">정관수술 개요 · 무도정관수술</a>
+            <a href="vasectomy.html?tab=reversal">미세정관복원수술</a>
+          </div>
+        </div>
+        <div class="gnj-nav-item"><a href="vasectomy.html?tab=laser" class="gnj-a">포경수술</a></div>
+        <div class="gnj-nav-item">
+          <a href="consult.html" class="gnj-a is-current">상담/예약</a>
+          <div class="gnj-more-menu">
+            <a href="consult.html?tab=reserve">Meet the expert (수술상담)</a>
+            <a href="hospital.html?tab=nonbenefit">비용문의 · 비급여안내</a>
+            <a href="consult.html?tab=reserve">온라인예약</a>
+            <a href="consult.html?tab=faq">FAQ</a>
+          </div>
+        </div>
+      </nav>
+      <div class="gnj-hd-right"><button type="button" class="gnj-btn-consult" data-open-modal="consult">온라인 상담</button><button type="button" class="gnj-mobile-toggle" id="mobileMenuBtn"><span></span><span></span><span></span></button></div>
+    </div>
+  </header>
+  <div class="gnj-drawer" id="mobileDrawer"><button type="button" class="gnj-drawer__close" id="mobileDrawerClose">×</button><div class="gnj-drawer__links"><a href="hospital.html">병원소개</a><a href="stone.html">요로결석</a><a href="implant.html">음경임플란트</a><a href="prostate.html">전립선</a><a href="aesthetics.html">남성성형</a><a href="sexual.html">성기능장애</a><a href="vasectomy.html">정관·포경수술</a><a href="consult.html">상담/예약 · FAQ</a></div></div>
+
+  <main>
+    <section class="sub-hero">
+      <img src="../../assets/img/clinic_tour_5.jpg" alt="강남J비뇨기과 상담실" class="sub-hero__bg" />
+      <div class="sub-hero__overlay"></div>
+      <div class="sub-hero__inner">
+        <div class="sub-hero__eyebrow">MEET THE EXPERT · RESERVATION</div>
+        <h1 class="sub-hero__title">상담 · 예약 · FAQ</h1>
+        <p class="sub-hero__desc">평일 오전진료는 예약제로만 진행되며, 오후 진료도 예약우선제를 시행합니다. 전화·문자·카카오톡·온라인으로 편리하게 예약하세요.</p>
+      </div>
+    </section>
+
+    <div class="sub-tabs-bar">
+      <div class="sub-tabs-inner">
+        <button type="button" class="sub-tab is-active" data-tab="reserve">온라인예약 · 수술상담</button>
+        <button type="button" class="sub-tab" data-tab="faq">자주 묻는 질문 (FAQ)</button>
+      </div>
+    </div>
+
+    <section class="sub-section">
+      <div class="sub-container">
+        <div class="sub-panel is-active" data-panel="reserve">
+          <div class="sub-grid-2">
+            <div>
+              <h2 class="sub-h2">온라인 간편 예약</h2>
+              <p class="sub-lead">유선 및 내원 상담 시 질병과 복용약, 과거 받았던 수술 등을 말씀해주시면 더 빠르고 정확한 상담이 가능합니다.</p>
+              <form class="gnj-form" id="pageReserveForm">
+                <input type="text" class="gnj-input" placeholder="성함 (가명 가능)" required />
+                <input type="tel" class="gnj-input" placeholder="연락처 (예: 010-0000-0000)" required />
+                <select class="gnj-select">
+                  <option value="요로결석">진료분야: 요로결석</option>
+                  <option value="전립선">진료분야: 전립선 (HoLEP/유로리프트)</option>
+                  <option value="음경임플란트">진료분야: 음경임플란트</option>
+                  <option value="남성성형">진료분야: 남성성형</option>
+                  <option value="성기능장애">진료분야: 성기능장애</option>
+                  <option value="정관/포경">진료분야: 정관수술 / 포경수술</option>
+                </select>
+                <input type="date" class="gnj-input" />
+                <textarea class="gnj-textarea" rows="4" placeholder="상담 원하시는 증상이나 희망 예약 시간을 남겨주세요."></textarea>
+                <button type="submit" class="gnj-submit">예약 및 상담 신청하기</button>
+              </form>
+            </div>
+            <div class="info-card info-card--tint">
+              <div class="info-card__tag">DIRECT CONTACT</div>
+              <h3 class="info-card__title">직통 상담 채널</h3>
+              <p class="info-card__text" style="line-height:2;">
+                • <strong>대표전화</strong>: 02-3018-7575<br />
+                • <strong>모바일·문자상담</strong>: 010-9190-7575<br />
+                • <strong>해외상담</strong>: 82-2-3018-7575 / 82-10-9190-7575<br />
+                • <strong>카카오톡 ID</strong>: gnjurology<br />
+                • <strong>상담시간</strong>: 월~금 09:00 ~ 18:00 / 토 09:00 ~ 13:00<br />
+                (상담시간 외에는 문자 남겨주시면 순차적으로 상담 도와드립니다.)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-panel" data-panel="faq">
+          <h2 class="sub-h2">자주 묻는 질문 (FAQ)</h2>
+          <div class="sub-grid-2">
+            <div class="info-card"><div class="info-card__tag">Q1</div><h3 class="info-card__title">평일 오전에도 예약 없이 방문 가능한가요?</h3><p class="info-card__text">평일 오전진료(09:00~12:00)는 예약제로만 진행되니 내원 전 반드시 유선(02-3018-7575)으로 문의·예약 부탁드립니다.</p></div>
+            <div class="info-card"><div class="info-card__tag">Q2</div><h3 class="info-card__title">병원 내에서 다른 환자와 마주치진 않나요?</h3><p class="info-card__text">5개의 독립된 개인진료실과 상담실, 2개의 접수창구를 운영하고 있으며 모든 시술·검사에 의사와 남자 간호사만 참여해 프라이버시를 철저히 보호합니다.</p></div>
+            <div class="info-card"><div class="info-card__tag">Q3</div><h3 class="info-card__title">수술 당일 바로 진료와 수술이 가능한가요?</h3><p class="info-card__text">남성확대수술(기존 자가지방/대체진피/필러 경력이 없는 경우)이나 요로결석 체외충격파쇄석술 등은 사전 예약 내원 시 당일 진행이 가능합니다.</p></div>
+            <div class="info-card"><div class="info-card__tag">Q4</div><h3 class="info-card__title">주차 공간이 있나요?</h3><p class="info-card__text">서울시 강남구 학동로 203 병원 빌딩 내 충분한 주차 공간을 갖춘 지하 주차장이 마련되어 있습니다.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr-section"><div class="ftr-bottom" style="margin-top:0;border-top:none;"><div class="ftr-legal-links"><a href="hospital.html?tab=nonbenefit">비급여비용안내</a><a href="hospital.html?tab=location">오시는 길</a><a href="consult.html">온라인 예약</a></div><div>상호: 강남J비뇨기과의원 | 원장: 박천진 | 사업자등록번호: 120-90-16660 | Copyright© 1999 GANGNAM J UROLOGY CLINIC ALL RIGHTS RESERVED.</div></div></footer>
+  <button type="button" class="reserve_btn" data-open-modal="consult"><span class="reserve_btn__icon">+</span><span>상담예약</span></button>
+  <div class="ftr-floating-right"><div class="ftr-quick-list" id="quickList"><a href="tel:02-3018-7575" class="ftr-squircle"><span>📞</span><span>전화</span></a><a href="sms:010-9190-7575" class="ftr-squircle"><span>💬</span><span>문자</span></a><a href="hospital.html?tab=location" class="ftr-squircle"><span>📍</span><span>위치</span></a></div><button type="button" class="ftr-squircle" id="quickToggle">×</button><button type="button" class="ftr-circle-btn ftr-kakao" data-open-modal="kakao">TALK</button><button type="button" class="ftr-circle-btn ftr-top" id="scrollTopBtn">TOP</button></div>
+  <div class="gnj-modal" id="gnjModal"><div class="gnj-modal__dialog"><button type="button" class="gnj-modal__close" id="modalClose">×</button><div class="gnj-modal__eyebrow" id="modalEyebrow"></div><h3 class="gnj-modal__title" id="modalTitle"></h3><div class="gnj-modal__body" id="modalBody"></div></div></div>
+  <script src="../../assets/js/common.js"></script>
+  <script>
+    document.getElementById('pageReserveForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('예약 및 상담 신청이 접수되었습니다. 확인 후 빠르게 연락드리겠습니다. (02-3018-7575)');
+    });
+  </script>
+</body>
+</html>
