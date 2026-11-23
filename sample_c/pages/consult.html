@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>상담 / 온라인 예약 | 강남J비뇨기과의원</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header solid-always" id="siteHeader">
+    <div class="header-inner">
+      <a href="../index.html" class="brand-logo"><span class="brand-en">GANGNAM J</span><span class="brand-ko">강남J비뇨기과의원</span></a>
+      <nav class="gnb" aria-label="주 메뉴">
+        <ul class="gnb-list">
+          <li class="gnb-item"><a href="hospital.html" class="gnb-link">병원소개</a></li>
+          <li class="gnb-item"><a href="stone.html" class="gnb-link">요로결석</a></li>
+          <li class="gnb-item"><a href="implant.html" class="gnb-link">음경임플란트</a></li>
+          <li class="gnb-item"><a href="prostate.html" class="gnb-link">전립선</a></li>
+          <li class="gnb-item"><a href="plastic.html" class="gnb-link">남성성형</a></li>
+          <li class="gnb-item"><a href="sexual.html" class="gnb-link">성기능장애</a></li>
+          <li class="gnb-item"><a href="vasectomy.html" class="gnb-link">정관수술</a></li>
+          <li class="gnb-item"><a href="circumcision.html" class="gnb-link">포경수술</a></li>
+          <li class="gnb-item"><a href="consult.html" class="gnb-link active">상담/예약</a><div class="gnb-dropdown"><a href="consult.html?tab=expert">Meet the expert</a><a href="consult.html?tab=reserve">온라인 예약 · 비용문의</a><a href="consult.html?tab=faq">자주 묻는 질문 (FAQ)</a></div></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="hospital.html?tab=nonbenefit" class="btn-header-fee">비급여 안내</a>
+        <a href="consult.html?tab=reserve" class="btn-header-reserve">예약 문의</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="모바일 메뉴 열기" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="7" x2="21" y2="7"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="17" x2="21" y2="17"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header"><span class="brand-en">GANGNAM J · SINCE 1999</span><button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="메뉴 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button></div>
+    <ul class="mobile-nav-list"><li><a href="../index.html">홈</a></li><li><a href="hospital.html">병원소개</a></li><li><a href="stone.html">요로결석</a></li><li><a href="implant.html">음경임플란트</a></li><li><a href="prostate.html">전립선</a></li><li><a href="plastic.html">남성성형</a></li><li><a href="sexual.html">성기능장애</a></li><li><a href="vasectomy.html">정관수술</a></li><li><a href="circumcision.html">포경수술</a></li><li><a href="consult.html">상담/예약</a></li></ul>
+    <div class="mobile-drawer-footer"><a href="tel:02-3018-7575" class="mobile-tel-link">대표전화 02-3018-7575</a></div>
+  </div>
+
+  <section class="sub-hero">
+    <div class="sub-hero-bg"><img src="../../assets/img/clinic_tour_5.jpg" alt="상담 및 예약" /></div>
+    <div class="sub-hero-overlay"></div>
+    <div class="container sub-hero-inner">
+      <div class="breadcrumb"><a href="../index.html">HOME</a><span>/</span><span>상담/예약</span></div>
+      <span class="section-eyebrow-gold">PRIVATE CONSULTATION</span>
+      <h1 class="sub-hero-title">상담 · 예약</h1>
+      <p class="sub-hero-desc">강남J비뇨기과는 사전 예약진료로 운영됩니다. 1:1 비공개 온라인 상담 및 전화·카카오톡·문자 핫라인을 통해 빠르게 안내받으실 수 있습니다.</p>
+    </div>
+  </section>
+
+  <nav class="sub-tab-bar" aria-label="상담예약 세부 메뉴">
+    <div class="container">
+      <div class="sub-tab-list">
+        <button type="button" class="sub-tab-btn active" data-tab="reserve">온라인 예약 · 간편 상담</button>
+        <button type="button" class="sub-tab-btn" data-tab="expert">Meet the expert (수술상담)</button>
+        <button type="button" class="sub-tab-btn" data-tab="faq">자주 묻는 질문 (FAQ)</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="tab-panel active content-band-dark" data-tab-panel="reserve">
+      <div class="container">
+        <div class="consult-grid">
+          <div class="consult-form-wrap">
+            <span class="section-eyebrow-gold">ONLINE RESERVATION</span>
+            <h2 class="section-title-light">프라이빗 온라인 사전 예약</h2>
+            <p class="consult-desc">진료시간 외 접수 시 24시간 문자 핫라인(010-9190-7575)을 통해 순차 회신해 드립니다.</p>
+            <form id="consultForm" class="underline-form" novalidate>
+              <div class="form-row-2col">
+                <div class="form-field"><label for="consultName">성함 (또는 별칭)</label><input type="text" id="consultName" name="name" placeholder="홍길동" required /></div>
+                <div class="form-field"><label for="consultPhone">연락처</label><input type="tel" id="consultPhone" name="phone" placeholder="010-0000-0000" required /></div>
+              </div>
+              <div class="form-row-2col">
+                <div class="form-field">
+                  <label for="consultCategory">관심 진료 분야</label>
+                  <select id="consultCategory" name="category" required>
+                    <option value="">진료 분야를 선택해 주세요</option>
+                    <option value="전립선 (HoLEP · 유로리프트 · 전립선염)">전립선 (HoLEP · 유로리프트 · 전립선염)</option>
+                    <option value="요로결석 (체외충격파 · 내시경)">요로결석 (체외충격파 · 내시경)</option>
+                    <option value="음경임플란트 · 발기부전">음경임플란트 · 발기부전</option>
+                    <option value="남성성형 (확대 · 만곡증 · 이물질제거)">남성성형 (확대 · 만곡증 · 이물질제거)</option>
+                    <option value="성기능장애 · 정관수술 · 포경수술">성기능장애 · 정관수술 · 포경수술</option>
+                    <option value="기타 예약 및 비용 문의">기타 예약 및 비용 문의</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="consultDate">희망 날짜 (선택)</label>
+                  <input type="date" id="consultDate" name="date" style="color-scheme:dark;" />
+                </div>
+              </div>
+              <div class="form-field"><label for="consultMessage">상담 희망 내용 및 원하시는 연락 시간 (선택)</label><textarea id="consultMessage" name="message" rows="3" placeholder="증상이나 궁금하신 점, 희망 예약 일정을 간략히 적어주세요."></textarea></div>
+              <div class="form-actions">
+                <button type="submit" class="btn-gold-solid">비공개 상담 신청하기</button>
+                <a href="hospital.html?tab=nonbenefit" class="btn-outline-gold">비급여 비용안내 전체보기</a>
+              </div>
+              <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+          <div class="location-card">
+            <span class="section-eyebrow-gold">DIRECT CONTACT</span>
+            <h3 class="location-title">빠른 예약 및 문의 안내</h3>
+            <div class="location-info-list">
+              <div class="location-item"><span class="loc-label">대표전화</span><p class="loc-value"><a href="tel:02-3018-7575">02-3018-7575</a><small>해외상담 직통 +82-2-3018-7575</small></p></div>
+              <div class="location-item"><span class="loc-label">문자 핫라인</span><p class="loc-value"><a href="tel:010-9190-7575">010-9190-7575</a><small>24시간 문자 접수 시 순차 회신</small></p></div>
+              <div class="location-item"><span class="loc-label">카카오톡 · FAX</span><p class="loc-value">ID: <strong>gnjurology</strong> <button type="button" class="btn-copy-inline" id="copyKakaoInline">ID 복사</button><small>FAX 02-516-2030</small></p></div>
+              <div class="location-item"><span class="loc-label">진료시간</span><p class="loc-value">월–금 09:00~18:00 / 토 09:00~13:00<small>이웅희 원장 목 휴진 / 박천진 원장 월·목 오후 휴진</small></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-panel content-band-light" data-tab-panel="expert">
+      <div class="container">
+        <div class="info-grid-2" style="margin-bottom:28px;">
+          <div class="info-card-light">
+            <h3>Meet the expert (1:1 전문의 수술상담)</h3>
+            <p>수술 여부, 마취 방식, 예상 회복 기간 및 비용에 대한 궁금증을 비뇨의학과 전문의와의 상담을 통해 안내해 드립니다. 상담 시간 외에는 문자 핫라인(010-9190-7575) 또는 카카오톡(gnjurology)으로 남겨주시면 순차적으로 회신해 드립니다.</p>
+          </div>
+          <div class="info-card-light">
+            <h3>상담 전 확인 사항</h3>
+            <ul class="bullet-list">
+              <li>기존 수술 경력(자가지방·필러·대체진피 등) 유무</li>
+              <li>복용 중인 약물(항응고제·전립선 약물 등) 및 기저질환(당뇨·고혈압)</li>
+              <li>희망 내원 일시 (사전 예약제 운영)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="info-card-light">
+          <h3>1:1 비공개 수술상담 신청 (외부 비공개)</h3>
+          <form id="cExpertForm" novalidate style="margin-top:18px;display:grid;gap:14px;">
+            <div class="form-row-2col">
+              <div><label for="ceName" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px;">성함 (또는 이니셜) *</label><input type="text" id="ceName" placeholder="성함 또는 이니셜" required style="width:100%;height:44px;padding:0 14px;border:1px solid rgba(34,32,30,0.2);border-radius:10px;background:#FFFFFF;" /></div>
+              <div><label for="cePhone" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px;">연락처 *</label><input type="tel" id="cePhone" placeholder="010-0000-0000" required style="width:100%;height:44px;padding:0 14px;border:1px solid rgba(34,32,30,0.2);border-radius:10px;background:#FFFFFF;" /></div>
+            </div>
+            <div>
+              <label for="ceCategory" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px;">상담 수술 분야 *</label>
+              <select id="ceCategory" required style="width:100%;height:44px;padding:0 14px;border:1px solid rgba(34,32,30,0.2);border-radius:10px;background:#FFFFFF;">
+                <option value="">수술 분야를 선택해 주세요</option>
+                <option value="요로결석 (ESWL · URS · RIRS)">요로결석 (ESWL · URS · RIRS)</option>
+                <option value="전립선 (HoLEP · 유로리프트)">전립선 (HoLEP · 유로리프트)</option>
+                <option value="음경임플란트 · COMBI-OPERATION">음경임플란트 · COMBI-OPERATION</option>
+                <option value="남성성형 (SGA · NPA · 만곡증 · 이물질제거)">남성성형 (SGA · NPA · 만곡증 · 이물질제거)</option>
+                <option value="성기능장애 · 정관 · 포경수술">성기능장애 · 정관 · 포경수술</option>
+                <option value="수술 비용 및 기타 문의">수술 비용 및 기타 문의</option>
+              </select>
+            </div>
+            <div>
+              <label for="ceContent" style="display:block;font-size:0.8125rem;font-weight:600;margin-bottom:6px;">상담 내용 *</label>
+              <textarea id="ceContent" rows="4" placeholder="현재 증상이나 궁금하신 수술 방법·회복 기간 등을 자유롭게 남겨주세요." required style="width:100%;padding:12px 14px;border:1px solid rgba(34,32,30,0.2);border-radius:10px;background:#FFFFFF;font-family:inherit;"></textarea>
+            </div>
+            <label style="display:inline-flex;align-items:center;gap:8px;font-size:0.84375rem;cursor:pointer;">
+              <input type="checkbox" id="ceAgree" required />
+              <span>1:1 비공개 수술상담 회신을 위한 개인정보 수집·이용에 동의합니다.</span>
+            </label>
+            <div><button type="submit" class="btn-gold-solid">비공개 수술상담 신청하기</button></div>
+            <p id="cExpertFeedback" role="status" aria-live="polite" style="font-size:0.875rem;font-weight:600;"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-panel content-band-light" data-tab-panel="faq">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-eyebrow-dark">FREQUENTLY ASKED QUESTIONS</span>
+          <h2 class="section-title-dark">자주 묻는 질문</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button type="button" class="faq-question"><span>예약 없이 당일 방문해도 진료가 가능한가요?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-answer">강남J비뇨기과는 예약진료로 운영되고 있어, 예약 없이 방문하실 경우 대기시간이 발생하거나 당일 진료가 어려울 수 있습니다. 가급적 02-3018-7575로 사전 예약 및 예약 확인 후 내원해 주시면 감사하겠습니다.</div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question"><span>2인 전문의 진료 일정은 어떻게 되나요?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-answer">2026년 8월 기준 통합 진료시간표에 따라 이웅희 전문의는 목요일 휴진(월·화·수·금·토 오전 진료), 박천진 대표원장은 월·목 오후 휴진(월~금 오전 수술/진료, 화·수·금 오후 진료, 토 오전 진료)으로 운영됩니다.</div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question"><span>수술 시 마취와 통증 관리는 어떻게 진행되나요?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-answer">최소 국소 신경마취와 실시간 생체 활력증후(맥박·산소포화도·혈압·호흡수) 모니터링, 수술 중 음악요법(IOM)을 적용하며, 통증·출혈·합병증 부담을 줄이는 No3 원칙 지향 하에 베테랑 정식 간호사 3인 수술팀이 함께합니다.</div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question"><span>남성확대수술 당일 시술이 가능한가요?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-answer">기존 자가지방·대체진피·필러 수술 경력이 없다면 사전 예약 내원을 통해 당일 수술이 가능합니다. 정확한 가능 여부는 내원 후 전문의 진찰을 거쳐 확정됩니다.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top"><div class="footer-brand"><span class="brand-en">GANGNAM J UROLOGY CLINIC</span><p class="footer-tagline">1999년 개원 · 2인 비뇨의학과 전문의 협진</p></div><div class="footer-links"><a href="hospital.html?tab=nonbenefit">비급여 비용안내</a><a href="hospital.html">병원소개</a></div></div>
+      <div class="footer-bottom"><div class="footer-meta"><span>상호명: 강남J비뇨기과의원</span><span>대표원장: 박천진</span><span>사업자등록번호: 120-90-16660</span><span>주소: 서울시 강남구 학동로 203 4F</span><span>전화: 02-3018-7575</span><span>핫라인: 010-9190-7575</span></div><p class="copyright">Copyright © 1999 GANGNAM J UROLOGY CLINIC. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <div class="floating-dock">
+    <a href="tel:02-3018-7575" class="float-btn" aria-label="전화 상담"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span class="float-tooltip">전화 02-3018-7575</span></a>
+    <button type="button" class="float-btn" id="copyKakaoFloat" aria-label="카카오톡 ID 복사"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg><span class="float-tooltip">카톡 ID 복사 (gnjurology)</span></button>
+    <button type="button" class="float-btn" id="scrollTopBtn" aria-label="맨 위로"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="18 15 12 9 6 15"></polyline></svg><span class="float-tooltip">TOP</span></button>
+  </div>
+  <div class="toast-msg" id="toastMsg" role="status" aria-live="polite"></div>
+  <script src="../script.js"></script>
+</body>
+</html>

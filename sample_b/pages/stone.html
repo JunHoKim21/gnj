@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>요로결석 센터 | 강남J비뇨기과의원</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="brand-logo"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과의원" width="150" height="28" /></a>
+      <nav class="gnb-nav" aria-label="주 메뉴">
+        <ul class="gnb-list">
+          <li class="gnb-item"><a href="hospital.html" class="gnb-link">병원소개</a></li>
+          <li class="gnb-item"><a href="stone.html" class="gnb-link is-current">요로결석</a>
+            <ul class="gnb-dropdown">
+              <li><a href="stone.html?tab=cause">원인 · 증상</a></li>
+              <li><a href="stone.html?tab=diagnosis">진단 프로토콜</a></li>
+              <li><a href="stone.html?tab=treatment">치료법 (ESWL·URS·RIRS)</a></li>
+              <li><a href="stone.html?tab=equipment">보유 첨단 장비 7종</a></li>
+            </ul>
+          </li>
+          <li class="gnb-item"><a href="implant.html" class="gnb-link">음경임플란트</a></li>
+          <li class="gnb-item"><a href="prostate.html" class="gnb-link">전립선</a></li>
+          <li class="gnb-item"><a href="plastic.html" class="gnb-link">남성성형</a></li>
+          <li class="gnb-item"><a href="sexual.html" class="gnb-link">성기능장애</a></li>
+          <li class="gnb-item"><a href="vasectomy.html" class="gnb-link">정관수술</a></li>
+          <li class="gnb-item"><a href="circumcision.html" class="gnb-link">포경수술</a></li>
+          <li class="gnb-item"><a href="consult.html" class="gnb-link">상담/예약</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:02-3018-7575" class="phone-pill"><span>02-3018-7575</span></a>
+        <a href="consult.html?tab=reserve" class="btn-primary-sm">온라인 예약</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="전체 메뉴 열기"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" /></svg></button>
+      </div>
+    </div>
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-inner">
+        <div class="mobile-drawer-head"><span class="drawer-label">GANGNAM J MENU</span><button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="닫기"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg></button></div>
+        <ul class="mobile-nav-list">
+          <li><a href="../index.html">홈</a></li><li><a href="hospital.html">병원소개</a></li><li><a href="stone.html">요로결석</a></li><li><a href="implant.html">음경임플란트</a></li><li><a href="prostate.html">전립선</a></li><li><a href="plastic.html">남성성형</a></li><li><a href="sexual.html">성기능장애</a></li><li><a href="vasectomy.html">정관수술</a></li><li><a href="circumcision.html">포경수술</a></li><li><a href="consult.html">상담/예약</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="subpage-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="../index.html">홈</a><span>/</span><span>요로결석</span></div>
+        <h1 class="subpage-title">요로결석 클리닉</h1>
+        <p class="subpage-desc">C-arm·ENDOMAT·Holmium Laser 30W·Storz HD·Lithovue·RIRS·URS 7종 전용 장비로 ESWL부터 내시경 결석제거술까지 원스톱 시행합니다.</p>
+      </div>
+    </section>
+
+    <div class="sub-tabs-wrap">
+      <div class="container">
+        <div class="sub-tabs" role="tablist">
+          <button type="button" class="sub-tab-btn is-active" data-subtab="cause">원인 · 증상</button>
+          <button type="button" class="sub-tab-btn" data-subtab="diagnosis">진단 프로토콜</button>
+          <button type="button" class="sub-tab-btn" data-subtab="treatment">치료법 (ESWL·URS·RIRS)</button>
+          <button type="button" class="sub-tab-btn" data-subtab="equipment">보유 첨단 장비 7종</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="sub-panel" id="sub-cause">
+      <div class="container">
+        <div class="card-grid-2">
+          <div class="info-card">
+            <h3>요로결석의 정의와 발생 위치</h3>
+            <p>신장, 요관, 방광, 요도 등 소변이 생성·배출되는 요로계에 칼슘·수산·요산 등 무기질·유기물이 결합해 단단한 결석이 형성되는 질환입니다.</p>
+            <ul>
+              <li><strong>상부 요로결석 (90% 이상)</strong>: 신장결석, 요관결석</li>
+              <li><strong>하부 요로결석 (10% 이하)</strong>: 방광결석, 요도결석</li>
+            </ul>
+          </div>
+          <div class="info-card is-sub">
+            <h3>주요 증상 및 크기별 기준</h3>
+            <p>소변 흐름을 방해해 극심한 옆구리 통증, 혈뇨, 요로 감염, 신부전 등의 문제를 유발할 수 있으며 크기·위치에 따라 자연배출 또는 전문 치료를 결정합니다.</p>
+            <div class="media-frame" style="margin-top:14px;"><img src="../../assets/img/clinic_operating_room.jpg" alt="요로결석 증상" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sub-panel" id="sub-diagnosis" hidden>
+      <div class="container">
+        <div class="card-grid-2">
+          <div class="info-card">
+            <h3>수술·시술 전 4종 정밀 검사</h3>
+            <ul>
+              <li><strong>문진 및 신체검사</strong> (History Taking &amp; Physical examination)</li>
+              <li><strong>소변검사</strong> (Urinalysis): 혈뇨 및 요로 감염 동반 여부 확인</li>
+              <li><strong>혈액검사</strong> (CBC, PNA): 신기능 및 염증 수치 평가</li>
+              <li><strong>영상검사</strong>: 단순복부촬영(KUB), 신장초음파, 조영제사용촬영(IVP), 요로조영촬영(CT)</li>
+            </ul>
+          </div>
+          <div class="info-card is-sub">
+            <img src="../../assets/img/clinic_ultrasound.jpg" alt="요로결석 수술전 준비사항 4종" style="border-radius:12px;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sub-panel" id="sub-treatment" hidden>
+      <div class="container">
+        <div class="card-grid-2">
+          <div class="info-card">
+            <h3>체외충격파쇄석술 (ESWL)</h3>
+            <p>STEP 01 결석 위치 확인 → STEP 02 충격파로 분쇄 → STEP 03 소변으로 자연 배출</p>
+            <ul>
+              <li>입원 및 마취가 불필요하며 짧은 시술 시간</li>
+              <li>필요 시 반복 시술 가능, 높은 파쇄 성공률</li>
+            </ul>
+          </div>
+          <div class="info-card is-sub">
+            <h3>요관내시경 결석제거술 (URS · RIRS)</h3>
+            <p>홀뮴레이저(30W)와 가느다란 경성·연성 내시경으로 결석을 직접 파쇄·제거하는 절개 없는 최소침습 시술입니다.</p>
+            <ul>
+              <li>연성요관내시경(RIRS)·Lithovue로 신장 및 상부요관 결석까지 접근</li>
+              <li>경성요관내시경(URS)으로 요관 내 결석 직접 제거</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sub-panel" id="sub-equipment" hidden>
+      <div class="container">
+        <div class="card-grid-3">
+          <div class="info-card"><h3>01. 씨암 (C-arm)</h3><p>실시간 투시 영상 검사로 결석 위치를 정밀 확인합니다.</p></div>
+          <div class="info-card"><h3>02. 엔도매트 (ENDOMAT)</h3><p>관류(Perfusion)와 흡인(Irrigation)을 동시에 제어해 시야를 확보합니다.</p></div>
+          <div class="info-card"><h3>03. 홀뮴레이저 30W</h3><p>주변 조직 손상을 줄이면서 결석만 정밀하게 분쇄합니다.</p></div>
+          <div class="info-card"><h3>04. Storz 디지털 HD 내시경</h3><p>고해상도 디지털 영상으로 미세 결석까지 선명하게 관찰합니다.</p></div>
+          <div class="info-card"><h3>05. 리쏘뷰 (Lithovue)</h3><p>고해상도 디지털 일회용 연성요관내시경으로 감염 위험을 낮춥니다.</p></div>
+          <div class="info-card"><h3>06. 연성요관내시경 (RIRS)</h3><p>유연한 재질로 신장·상부요관 굴곡 부위까지 진입합니다.</p></div>
+          <div class="info-card"><h3>07. 경성요관내시경 (URS)</h3><p>직선형 내시경으로 요관 내 결석을 신속히 파쇄·제거합니다.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과의원" width="150" height="28" /><p class="footer-eng">GANGNAM J UROLOGY CLINIC</p></div>
+        <div class="footer-links"><a href="../index.html">홈</a><a href="hospital.html?tab=nonbenefit">비급여비용안내</a><a href="consult.html">상담/예약</a></div>
+      </div>
+      <div class="footer-info">
+        <p>상호명: 강남J비뇨기과의원 | 대표원장: 박천진 | 사업자등록번호: 120-90-16660</p>
+        <p>주소: 서울시 강남구 학동로 203 4F (학동역 8·9번 출구 사이) | 전화: 02-3018-7575 | 핫라인: 010-9190-7575 | 카톡: gnjurology | FAX: 02-516-2030</p>
+        <p class="copyright">Copyright © 1999 GANGNAM J UROLOGY CLINIC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <nav class="mobile-bottom-bar" aria-label="모바일 빠른 상담"><a href="tel:02-3018-7575" class="mbar-btn"><span>전화</span></a><a href="sms:010-9190-7575" class="mbar-btn"><span>문자</span></a><button type="button" class="mbar-btn js-copy-kakao"><span>카톡복사</span></button><a href="consult.html?tab=reserve" class="mbar-btn mbar-primary"><span>예약</span></a></nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>강남J비뇨기과의원 | GANGNAM J UROLOGY CLINIC · SINCE 1999</title>
+  <meta name="description" content="1999년 개원 강남J비뇨기과의원. 박천진 대표원장·이웅희 원장 2인 전문의 협진, 전립선 HoLEP·유로리프트, 요로결석 7종 장비, 음경임플란트·COMBI-OPERATION." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-c3">
+  <!-- 스크롤 프로그레스 바 -->
+  <div class="c3-progress" id="c3Progress" aria-hidden="true"></div>
+
+  <!-- 1단 투명 -> 솔리드 고정 헤더 -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="강남J비뇨기과의원 홈">
+        <span class="brand-en">GANGNAM J</span>
+        <span class="brand-ko">강남J비뇨기과의원</span>
+      </a>
+
+      <nav class="gnb" aria-label="주 메뉴">
+        <ul class="gnb-list">
+          <li class="gnb-item">
+            <a href="pages/hospital.html" class="gnb-link">병원소개</a>
+            <div class="gnb-dropdown">
+              <a href="pages/hospital.html?tab=doctors">의료진 소개 (2인 전문의)</a>
+              <a href="pages/hospital.html?tab=schedule">진료안내 · 2인 시간표</a>
+              <a href="pages/hospital.html?tab=tour">병원 둘러보기</a>
+              <a href="pages/hospital.html?tab=nonbenefit">비급여비용안내</a>
+              <a href="pages/hospital.html?tab=location">찾아오시는 길</a>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <a href="pages/stone.html" class="gnb-link">요로결석</a>
+            <div class="gnb-dropdown">
+              <a href="pages/stone.html?tab=overview">원인 · 증상</a>
+              <a href="pages/stone.html?tab=diagnosis">진단 및 준비</a>
+              <a href="pages/stone.html?tab=treatment">치료 · 장비 7종</a>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <a href="pages/implant.html" class="gnb-link">음경임플란트</a>
+            <div class="gnb-dropdown">
+              <a href="pages/implant.html?tab=overview">AMS 굴곡형 · 3-Piece</a>
+              <a href="pages/implant.html?tab=combi">COMBI-OPERATION</a>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <a href="pages/prostate.html" class="gnb-link">전립선</a>
+            <div class="gnb-dropdown">
+              <a href="pages/prostate.html?tab=overview">전립선비대증</a>
+              <a href="pages/prostate.html?tab=holep">HoLEP 시술</a>
+              <a href="pages/prostate.html?tab=urolift">유로리프트 (Urolift)</a>
+              <a href="pages/prostate.html?tab=etc">전립선염·암·통증</a>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <a href="pages/plastic.html" class="gnb-link">남성성형</a>
+            <div class="gnb-dropdown">
+              <a href="pages/plastic.html?tab=enlarge">SGA 귀두 · NPA 음경확대</a>
+              <a href="pages/plastic.html?tab=curvature">음경만곡증 교정</a>
+              <a href="pages/plastic.html?tab=foreign">이물질(바세린) 제거</a>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <a href="pages/sexual.html" class="gnb-link">성기능장애</a>
+            <div class="gnb-dropdown">
+              <a href="pages/sexual.html?tab=premature">조루증 진단·치료</a>
+              <a href="pages/sexual.html?tab=ed">발기부전 · 성기능검사</a>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <a href="pages/vasectomy.html" class="gnb-link">정관수술</a>
+            <div class="gnb-dropdown">
+              <a href="pages/vasectomy.html?tab=nodao">2mm 무도정관수술</a>
+              <a href="pages/vasectomy.html?tab=reversal">미세정관복원수술</a>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <a href="pages/circumcision.html" class="gnb-link">포경수술</a>
+            <div class="gnb-dropdown">
+              <a href="pages/circumcision.html?tab=laser">레이저 포경수술</a>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <a href="pages/consult.html" class="gnb-link">상담/예약</a>
+            <div class="gnb-dropdown">
+              <a href="pages/consult.html?tab=reserve">온라인 예약</a>
+              <a href="pages/consult.html?tab=expert">Meet the expert</a>
+              <a href="pages/consult.html?tab=faq">자주 묻는 질문</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="pages/hospital.html?tab=nonbenefit" class="btn-header-fee">비급여 안내</a>
+        <a href="pages/consult.html?tab=reserve" class="btn-header-reserve">예약 문의</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="모바일 메뉴 열기" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <line x1="3" y1="7" x2="21" y2="7"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="17" x2="21" y2="17"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 모바일 드로어 -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <span class="brand-en">GANGNAM J · SINCE 1999</span>
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="메뉴 닫기">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="pages/hospital.html">병원소개 · 의료진 · 진료시간</a></li>
+      <li><a href="pages/stone.html">요로결석</a></li>
+      <li><a href="pages/implant.html">음경임플란트</a></li>
+      <li><a href="pages/prostate.html">전립선</a></li>
+      <li><a href="pages/plastic.html">남성성형</a></li>
+      <li><a href="pages/sexual.html">성기능장애</a></li>
+      <li><a href="pages/vasectomy.html">정관수술</a></li>
+      <li><a href="pages/circumcision.html">포경수술</a></li>
+      <li><a href="pages/consult.html">상담 / 온라인 예약 / FAQ</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="pages/hospital.html?tab=nonbenefit" class="btn-outline-gold w-full">비급여 비용 안내 보기</a>
+      <a href="tel:02-3018-7575" class="mobile-tel-link">대표전화 02-3018-7575</a>
+      <p class="mobile-sub-info">24시간 문자 핫라인 010-9190-7575 · 카톡 gnjurology</p>
+    </div>
+  </div>
+
+  <!-- 공식 공지 레이어 팝업 2종 -->
+  <div class="c3-popups" aria-label="공지 팝업">
+    <div class="c3-popup" id="c3PopupSchedule">
+      <a href="pages/hospital.html?tab=schedule">
+        <img src="../assets/img/popup_20260824_popup.jpg" alt="강남J비뇨기과 통합 진료시간 안내" class="c3-popup__img" />
+      </a>
+      <div class="c3-popup__foot">
+        <label style="display:inline-flex;align-items:center;gap:6px;cursor:pointer;"><input type="checkbox" class="c3-popup__chk" /> 오늘 하루 보지 않기</label>
+        <button type="button" class="c3-popup__close">닫기</button>
+      </div>
+    </div>
+    <div class="c3-popup" id="c3PopupDoctor">
+      <a href="pages/hospital.html?tab=doctors">
+        <img src="../assets/img/popup_20260810_popup.jpg" alt="이웅희 원장 영입 안내" class="c3-popup__img" />
+      </a>
+      <div class="c3-popup__foot">
+        <label style="display:inline-flex;align-items:center;gap:6px;cursor:pointer;"><input type="checkbox" class="c3-popup__chk" /> 오늘 하루 보지 않기</label>
+        <button type="button" class="c3-popup__close">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- =========================================================
+         SECTION 1: 100vh 풀스크린 캐러셀 히어로 (샘플3 문법)
+    ========================================================== -->
+    <section class="c3-hero" aria-label="강남J비뇨기과 메인 비주얼">
+      <div class="c3-hero__slide is-active">
+        <img src="../assets/img/clinic_lobby.jpg" alt="강남J비뇨기과 메인 대리석 리셉션" />
+      </div>
+      <div class="c3-hero__slide">
+        <img src="../assets/img/clinic_lounge_wide.jpg" alt="강남J비뇨기과 프라이빗 대기 라운지" />
+      </div>
+      <div class="c3-hero__slide">
+        <img src="../assets/img/clinic_private_zone.jpg" alt="강남J비뇨기과 독립 대기 공간" />
+      </div>
+      <div class="c3-hero__scrim"></div>
+
+      <div class="c3-hero__inner">
+        <div class="container">
+          <span class="c3-hero__eyebrow">GANGNAM J UROLOGY · SINCE 1999</span>
+          <h1 class="c3-hero__title">
+            고요한 라운지처럼,<br />
+            오직 당신의 <em>회복에만 집중하는</em> 시간
+          </h1>
+          <p class="c3-hero__desc">
+            1999년 개원 이래 지켜온 비뇨의학과 전문의의 원칙. 박천진 대표원장과 세브란스 교수 출신 이웅희 원장의 2인 협진으로 프라이빗하고 안정감 있는 진료를 약속합니다.
+          </p>
+
+          <div class="c3-hero__controls">
+            <div class="c3-hero__pager">
+              <span id="c3HeroNum">01 — 03</span>
+              <div class="c3-hero__track"><div class="c3-hero__fill" id="c3HeroFill"></div></div>
+              <button type="button" class="c3-hero__arrow" id="c3HeroPrev" aria-label="이전 슬라이드">‹</button>
+              <button type="button" class="c3-hero__arrow" id="c3HeroNext" aria-label="다음 슬라이드">›</button>
+            </div>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="pages/consult.html?tab=reserve" class="btn-gold-solid">프라이빗 예약 상담</a>
+              <a href="pages/hospital.html" class="btn-ghost-white">병원소개 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 2: 언더라인 퀵상담 바 (샘플3 시그니처 문법)
+    ========================================================== -->
+    <section class="c3-quick-sect" aria-label="빠른 예약 상담">
+      <div class="container">
+        <div class="c3-quick-head">
+          <h2>상담, 간편하고 빠르게.</h2>
+          <p>대표전화 <strong>02-3018-7575</strong> · 24시간 문자 <strong>010-9190-7575</strong> · 카톡 ID <strong>gnjurology</strong></p>
+        </div>
+
+        <form id="c3QuickForm">
+          <div class="c3-quick-row">
+            <div class="c3-u-field">
+              <label for="c3Name">성함 (또는 이니셜)</label>
+              <input type="text" id="c3Name" placeholder="성함을 입력하세요" required />
+            </div>
+            <div class="c3-u-field">
+              <label for="c3Phone">연락처</label>
+              <input type="tel" id="c3Phone" placeholder="010-0000-0000" required />
+            </div>
+            <div class="c3-u-field">
+              <label for="c3Subject">진료과목</label>
+              <select id="c3Subject">
+                <option value="전립선 (HoLEP·유로리프트)">전립선 (HoLEP·유로리프트)</option>
+                <option value="요로결석">요로결석</option>
+                <option value="음경임플란트 · COMBI">음경임플란트 · COMBI</option>
+                <option value="남성성형 · 만곡증 · 이물질">남성성형 · 만곡증 · 이물질</option>
+                <option value="성기능장애 (조루·발기부전)">성기능장애 (조루·발기부전)</option>
+                <option value="정관수술 · 포경수술">정관수술 · 포경수술</option>
+              </select>
+            </div>
+            <div class="c3-u-field">
+              <label for="c3Time">희망 시간대</label>
+              <select id="c3Time">
+                <option value="평일 오전 (09:00~12:30)">평일 오전 (09:00~12:30)</option>
+                <option value="평일 오후 (14:00~18:00)">평일 오후 (14:00~18:00)</option>
+                <option value="토요일 오전 (09:00~13:00)">토요일 오전 (09:00~13:00)</option>
+                <option value="문자/카톡 우선 안내">문자/카톡 우선 안내</option>
+              </select>
+            </div>
+            <button type="submit" class="c3-quick-btn">상담 신청</button>
+          </div>
+          <div class="c3-quick-foot">
+            <label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer;">
+              <input type="checkbox" id="c3Agree" required />
+              <span>개인정보 수집 및 이용에 동의합니다. (1:1 비밀보장 상담 목적 외 미사용)</span>
+            </label>
+            <span class="c3-quick-feedback" id="c3QuickFeedback" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 3: 4대 전문 진료센터 대형 비주얼 카드
+    ========================================================== -->
+    <section class="c3-sect">
+      <div class="container">
+        <div class="c3-sect__head reveal">
+          <div>
+            <span class="section-eyebrow-dark">SPECIALIZED CENTERS</span>
+            <h2 class="section-title-dark">강남J 전문 진료센터</h2>
+          </div>
+          <p style="max-width:460px;color:#66615B;font-size:0.95rem;line-height:1.7;">
+            질환별 원인 분석부터 수술 전 정밀 검사, 단계별 맞춤 치료 프로토콜을 전용 페이지에서 확인하실 수 있습니다.
+          </p>
+        </div>
+
+        <div class="c3-centers-grid reveal">
+          <a href="pages/prostate.html" class="c3-center-card">
+            <img src="../assets/img/clinic_ultrasound.jpg" alt="전립선 초음파 정밀 진단실" />
+            <div class="c3-center-card__body">
+              <span class="c3-center-card__en">01 / PROSTATE CLINIC</span>
+              <h3>전립선 클리닉</h3>
+              <p>전립선비대증 HoLEP 홀뮴레이저 적출술, 유로리프트(Urolift) 결찰술, 전립선염·암·통증 정밀 진료</p>
+            </div>
+          </a>
+
+          <a href="pages/stone.html" class="c3-center-card">
+            <img src="../assets/img/clinic_operating_room.jpg" alt="요로결석 전용 수술실" />
+            <div class="c3-center-card__body">
+              <span class="c3-center-card__en">02 / URINARY STONE</span>
+              <h3>요로결석 클리닉</h3>
+              <p>C-arm·ENDOMAT·Holmium Laser 30W·Storz·Lithovue·RIRS·URS 7종 전용 장비로 ESWL·내시경 치료</p>
+            </div>
+          </a>
+
+          <a href="pages/implant.html" class="c3-center-card">
+            <img src="../assets/img/clinic_operating_gate.jpg" alt="멸균 통제구역 수술센터" />
+            <div class="c3-center-card__body">
+              <span class="c3-center-card__en">03 / PENILE IMPLANT · COMBI</span>
+              <h3>음경임플란트</h3>
+              <p>AMS Spectra 굴곡형·3-Piece 팽창형 보형물 삽입술 및 전립선 HoLEP 동시 수술(COMBI-OPERATION)</p>
+            </div>
+          </a>
+
+          <a href="pages/plastic.html" class="c3-center-card">
+            <img src="../assets/img/clinic_consult_room.jpg" alt="1:1 프라이빗 대표원장 진료실" />
+            <div class="c3-center-card__body">
+              <span class="c3-center-card__en">04 / ANDROLOGY · SEXUAL</span>
+              <h3>남성성형 · 성기능 · 정관·포경</h3>
+              <p>SGA 귀두·NPA 음경확대, 음경만곡증·이물질 제거, 성기능검사·도플러·진동각검사, 2mm 무도정관·레이저포경</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 4: 풀폭 다크 카운트업 배너 + 4대 수술 안전 원칙
+    ========================================================== -->
+    <section class="c3-count-band">
+      <img src="../assets/img/clinic_exam_room.jpg" alt="" class="c3-count-band__bg" aria-hidden="true" />
+      <div class="container c3-count-band__inner">
+        <div class="c3-count-grid reveal">
+          <div class="c3-count-box">
+            <div class="c3-count-box__num">1999<small>년</small></div>
+            <div class="c3-count-box__label">강남J비뇨기과 개원</div>
+          </div>
+          <div class="c3-count-box">
+            <div class="c3-count-box__num">2<small>인</small></div>
+            <div class="c3-count-box__label">비뇨의학과 전문의 협진</div>
+          </div>
+          <div class="c3-count-box">
+            <div class="c3-count-box__num">7<small>종</small></div>
+            <div class="c3-count-box__label">요로결석 전용 첨단 장비</div>
+          </div>
+          <div class="c3-count-box">
+            <div class="c3-count-box__num">3<small>인</small></div>
+            <div class="c3-count-box__label">베테랑 정식 간호사 수술팀</div>
+          </div>
+        </div>
+
+        <div class="c3-safety-grid reveal">
+          <article class="c3-safety-card">
+            <span>01</span>
+            <h3>3S · No3 원칙 지향</h3>
+            <p>Safe·Simple·Speed 3S 원칙을 바탕으로 통증·출혈·합병증 부담을 줄이는 정밀 수술과 회복을 지향합니다.</p>
+          </article>
+          <article class="c3-safety-card">
+            <span>02</span>
+            <h3>최소 국소 신경마취 · 모니터링</h3>
+            <p>최소 국소 신경마취와 함께 맥박·산소포화도·혈압·호흡수 실시간 생체 활력증후 모니터링을 시행합니다.</p>
+          </article>
+          <article class="c3-safety-card">
+            <span>03</span>
+            <h3>IOM 음악요법 · 3인 수술팀</h3>
+            <p>수술 중 음악요법(IOM)을 적용하며, 베테랑 정식 간호사 출신 3인 수술팀이 협진합니다.</p>
+          </article>
+          <article class="c3-safety-card">
+            <span>04</span>
+            <h3>자체 소독기 · 고안 수술기구</h3>
+            <p>자체 설계·제작 첨단 소독기계 및 자외선 소독기, 원장이 직접 고안한 수술기구로 멸균 환경을 유지합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 5: 2인 전문의 리더 섹션 + 2026.08 통합 진료시간표
+    ========================================================== -->
+    <section class="c3-sect c3-sect--white">
+      <div class="container">
+        <div class="c3-sect__head reveal">
+          <div>
+            <span class="section-eyebrow-dark">MEDICAL SPECIALISTS</span>
+            <h2 class="section-title-dark">2인 비뇨의학과 전문의 &amp; 진료시간표</h2>
+          </div>
+          <a href="pages/hospital.html?tab=doctors" class="btn-outline-gold" style="color:#22201E;border-color:#B89B72;">의료진 · 병원소개 상세 →</a>
+        </div>
+
+        <div class="c3-doctors-grid reveal">
+          <article class="c3-doc-card">
+            <div class="c3-doc-card__photo">
+              <img src="../assets/img/doctor_park.jpg" alt="박천진 대표원장" />
+            </div>
+            <div class="c3-doc-card__body">
+              <span class="c3-doc-card__role">REPRESENTATIVE DIRECTOR</span>
+              <h3 class="c3-doc-card__name">박천진 <span>대표원장</span></h3>
+              <p class="c3-doc-card__sub">비뇨의학과 전문의 · 강남J비뇨기과 대표원장</p>
+              <ul class="c3-doc-card__bio">
+                <li>1999년 6월부터 직접 의료상담 및 비뇨의학과 진료 운영</li>
+                <li>대한비뇨기과학회 학술위원</li>
+                <li>HoLEP · 음경임플란트 · COMBI-OPERATION 라이브 서저리 및 학술 활동</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="c3-doc-card">
+            <div class="c3-doc-card__photo">
+              <img src="../assets/img/doctor_lee.jpg" alt="이웅희 원장" />
+            </div>
+            <div class="c3-doc-card__body">
+              <span class="c3-doc-card__role">DIRECTOR · M.D., Ph.D.</span>
+              <h3 class="c3-doc-card__name">이웅희 <span>원장</span></h3>
+              <p class="c3-doc-card__sub">비뇨의학과 전문의 · 연세의대 의학박사 (2026.08.21 진료 개시)</p>
+              <ul class="c3-doc-card__bio">
+                <li>연세대학교 의과대학 비뇨의학교실(세브란스) 교수 역임</li>
+                <li>현 연세대학교 의과대학 외래교수 · 2000 아시아 성학회 사무총장 역임</li>
+                <li>대한 비뇨의학과 의사회 학술이사</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="c3-schedule-card reveal">
+          <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;margin-bottom:20px;">
+            <div>
+              <span class="section-eyebrow-dark">CLINIC SCHEDULE · 2026.08 기준</span>
+              <h3 style="font-size:1.35rem;font-weight:700;color:#22201E;">최신 2인 통합 진료시간표</h3>
+            </div>
+            <div style="font-size:0.875rem;color:#66615B;">
+              <strong>월–금</strong> 09:00–18:00 &nbsp;|&nbsp; <strong>토요일</strong> 09:00–13:00 &nbsp;|&nbsp; <strong style="color:#8C6D3F;">사전 예약제</strong>
+            </div>
+          </div>
+
+          <div style="overflow-x:auto;border:1px solid rgba(34,32,30,0.12);border-radius:14px;">
+            <table class="c3-schedule-table" style="width:100%;border-collapse:collapse;text-align:center;font-size:0.875rem;">
+              <thead>
+                <tr style="background:#161513;color:#EAE5DC;">
+                  <th style="padding:12px;">의료진</th>
+                  <th style="padding:12px;">구분</th>
+                  <th style="padding:12px;">월</th>
+                  <th style="padding:12px;">화</th>
+                  <th style="padding:12px;">수</th>
+                  <th style="padding:12px;">목</th>
+                  <th style="padding:12px;">금</th>
+                  <th style="padding:12px;">토</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom:1px solid rgba(34,32,30,0.1);">
+                  <th rowspan="2" style="padding:12px;background:#F6F3EC;color:#22201E;">이웅희<br /><span style="font-size:0.75rem;font-weight:400;color:#66615B;">전문의</span></th>
+                  <td style="padding:10px;color:#66615B;font-weight:600;">오전</td><td>진료</td><td>진료</td><td>진료</td><td style="background:#FDF2F2;color:#A13A3A;font-weight:700;">휴진</td><td>진료</td><td>진료</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(34,32,30,0.1);">
+                  <td style="padding:10px;color:#66615B;font-weight:600;">오후</td><td>진료</td><td>진료</td><td>진료</td><td style="background:#FDF2F2;color:#A13A3A;font-weight:700;">휴진</td><td>진료</td><td style="color:#9E9890;">-</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(34,32,30,0.1);">
+                  <th rowspan="2" style="padding:12px;background:#F6F3EC;color:#22201E;">박천진<br /><span style="font-size:0.75rem;font-weight:400;color:#66615B;">대표원장</span></th>
+                  <td style="padding:10px;color:#66615B;font-weight:600;">오전</td><td style="color:#8C6D3F;font-weight:700;">수술/진료</td><td style="color:#8C6D3F;font-weight:700;">수술/진료</td><td style="color:#8C6D3F;font-weight:700;">수술/진료</td><td style="color:#8C6D3F;font-weight:700;">수술/진료</td><td style="color:#8C6D3F;font-weight:700;">수술/진료</td><td>진료</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px;color:#66615B;font-weight:600;">오후</td><td style="background:#FDF2F2;color:#A13A3A;font-weight:700;">휴진</td><td>진료</td><td>진료</td><td style="background:#FDF2F2;color:#A13A3A;font-weight:700;">휴진</td><td>진료</td><td style="color:#9E9890;">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:14px;font-size:0.84375rem;color:#66615B;">
+            강남J비뇨기과는 사전 예약진료로 운영되고 있어, 예약 없이 방문하실 경우 대기시간이 발생하거나 당일 진료가 어려울 수 있습니다. 가급적 <strong>02-3018-7575</strong>로 사전 예약 후 내원해 주시면 감사하겠습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-en">GANGNAM J UROLOGY CLINIC</span>
+          <p class="footer-sub">강남J비뇨기과의원 · SINCE 1999</p>
+        </div>
+        <div class="footer-links">
+          <a href="pages/hospital.html?tab=nonbenefit">비급여비용안내</a>
+          <a href="pages/consult.html?tab=reserve">온라인예약</a>
+          <a href="https://www.youtube.com/channel/UCU-wl-PZYxpWeDl1OIiE_hQ" target="_blank" rel="noopener noreferrer">공식 YouTube</a>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>상호명: 강남J비뇨기과의원 | 대표원장: 박천진 | 사업자등록번호: 120-90-16660</p>
+        <p>주소: 서울시 강남구 학동로 203 4F (7호선 학동역 8·9번 출구 사이) | 전화: 02-3018-7575 | 24시간 문자: 010-9190-7575 | 카톡: gnjurology | FAX: 02-516-2030</p>
+        <p class="footer-copy">Copyright © 1999 강남J비뇨기과의원. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
