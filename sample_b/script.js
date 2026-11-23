@@ -244,11 +244,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  if (!document.body.classList.contains('home-b2')) return;
-
   const todayKey = new Date().toISOString().slice(0, 10);
 
-  /* 2. 상단 공지 띠배너 */
+  /* 상단 공지 띠배너 (메인 + 서브페이지 공통) */
   const topNotice = document.getElementById('b2TopNotice');
   const closeNotice = document.getElementById('b2CloseNotice');
   const hideNoticeToday = document.getElementById('b2HideNoticeToday');
@@ -270,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
   closeNotice?.addEventListener('click', () => dismissNotice(false));
   hideNoticeToday?.addEventListener('click', () => dismissNotice(true));
 
-  /* 3. 스크롤 프로그레스바 & 투명 헤더 전환 */
+  /* 스크롤 프로그레스바 & 투명 -> 화이트 글래스 헤더 전환 (메인 + 서브페이지 공통) */
   const progressBar = document.getElementById('b2Progress');
   const header = document.getElementById('b2Header');
   const onScroll = () => {
@@ -280,11 +278,13 @@ document.addEventListener('DOMContentLoaded', () => {
       progressBar.style.width = `${max > 0 ? Math.min(100, (doc.scrollTop / max) * 100) : 0}%`;
     }
     if (header) {
-      header.classList.toggle('is-scrolled', window.scrollY > 36);
+      header.classList.toggle('is-scrolled', window.scrollY > 24);
     }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
+
+  if (!document.body.classList.contains('home-b2')) return;
 
   /* 4. 공식 공지 레이어 팝업 2종 */
   document.querySelectorAll('.b2-popup').forEach((p) => {

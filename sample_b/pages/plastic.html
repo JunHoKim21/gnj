@@ -11,42 +11,143 @@
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="../index.html" class="brand-logo"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과의원" width="150" height="28" /></a>
-      <nav class="gnb-nav" aria-label="주 메뉴">
-        <ul class="gnb-list">
-          <li class="gnb-item"><a href="hospital.html" class="gnb-link">병원소개</a></li>
-          <li class="gnb-item"><a href="stone.html" class="gnb-link">요로결석</a></li>
-          <li class="gnb-item"><a href="implant.html" class="gnb-link">음경임플란트</a></li>
-          <li class="gnb-item"><a href="prostate.html" class="gnb-link">전립선</a></li>
-          <li class="gnb-item"><a href="plastic.html" class="gnb-link is-current">남성성형</a>
-            <ul class="gnb-dropdown">
-              <li><a href="plastic.html?tab=sga">귀두확대술 (SGA)</a></li>
-              <li><a href="plastic.html?tab=npa">음경굵기확대술 (NPA)</a></li>
-              <li><a href="plastic.html?tab=length">길이연장 · 함몰음경</a></li>
-              <li><a href="plastic.html?tab=foreign">음경이물질제거</a></li>
-              <li><a href="plastic.html?tab=curvature">음경만곡증 교정</a></li>
-            </ul>
-          </li>
-          <li class="gnb-item"><a href="sexual.html" class="gnb-link">성기능장애</a></li>
-          <li class="gnb-item"><a href="vasectomy.html" class="gnb-link">정관수술</a></li>
-          <li class="gnb-item"><a href="circumcision.html" class="gnb-link">포경수술</a></li>
-          <li class="gnb-item"><a href="consult.html" class="gnb-link">상담/예약</a></li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <a href="tel:02-3018-7575" class="phone-pill"><span>02-3018-7575</span></a>
-        <a href="consult.html?tab=reserve" class="btn-primary-sm">온라인 예약</a>
-        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="전체 메뉴 열기"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" /></svg></button>
+  <!-- 스크롤 프로그레스 바 -->
+  <div class="b2-progress" id="b2Progress" aria-hidden="true"></div>
+
+  <!-- 상단 공지 띠배너 -->
+  <div class="b2-top-notice" id="b2TopNotice">
+    <div class="b2-top-notice__inner">
+      <a href="consult.html?tab=reserve" class="b2-top-notice__link">
+        1999년부터 지켜온 프라이버시 · 학동역 8·9번 출구 사이 강남J비뇨기과 (예약·상담 02-3018-7575) →
+      </a>
+      <div class="b2-top-notice__actions">
+        <button type="button" class="b2-top-notice__btn is-today" id="b2HideNoticeToday">오늘 하루 보지 않기</button>
+        <button type="button" class="b2-top-notice__btn" id="b2CloseNotice" aria-label="공지 닫기">✕</button>
       </div>
     </div>
+  </div>
+
+  <!-- 투명 -> 화이트 글래스 고정 헤더 -->
+  <header class="b2-header" id="b2Header">
+    <div class="b2-header__inner">
+      <a href="../index.html" class="b2-logo" aria-label="강남J비뇨기과의원 홈">
+        <img src="../../assets/img/common_logo.png" alt="강남J비뇨기과의원" />
+      </a>
+
+      <nav class="b2-gnb" aria-label="주 메뉴">
+        <ul class="b2-gnb__list">
+          <li class="b2-gnb__item">
+            <a href="hospital.html" class="b2-gnb__link">병원소개</a>
+            <div class="b2-gnb__sub">
+              <a href="hospital.html?tab=doctors">의료진 소개 (2인 전문의)</a>
+              <a href="hospital.html?tab=hours">진료안내 · 2인 시간표</a>
+              <a href="hospital.html?tab=tour">병원 둘러보기</a>
+              <a href="hospital.html?tab=nonbenefit">비급여 비용안내</a>
+              <a href="hospital.html?tab=location">찾아오시는 길</a>
+            </div>
+          </li>
+          <li class="b2-gnb__item">
+            <a href="stone.html" class="b2-gnb__link">요로결석</a>
+            <div class="b2-gnb__sub">
+              <a href="stone.html?tab=cause">원인 · 증상</a>
+              <a href="stone.html?tab=diagnosis">진단 프로토콜</a>
+              <a href="stone.html?tab=treatment">치료법 (ESWL·URS·RIRS)</a>
+              <a href="stone.html?tab=equipment">보유 첨단 장비 7종</a>
+            </div>
+          </li>
+          <li class="b2-gnb__item">
+            <a href="implant.html" class="b2-gnb__link">음경임플란트</a>
+            <div class="b2-gnb__sub">
+              <a href="implant.html?tab=implant">AMS 굴곡형 · 3-Piece</a>
+              <a href="implant.html?tab=combi">COMBI-OPERATION</a>
+            </div>
+          </li>
+          <li class="b2-gnb__item">
+            <a href="prostate.html" class="b2-gnb__link">전립선</a>
+            <div class="b2-gnb__sub">
+              <a href="prostate.html?tab=bph">전립선비대증</a>
+              <a href="prostate.html?tab=holep">HoLEP 시술</a>
+              <a href="prostate.html?tab=urolift">유로리프트 (Urolift)</a>
+              <a href="prostate.html?tab=etc">전립선염·암·통증</a>
+            </div>
+          </li>
+          <li class="b2-gnb__item">
+            <a href="plastic.html" class="b2-gnb__link is-current">남성성형</a>
+            <div class="b2-gnb__sub">
+              <a href="plastic.html?tab=enlarge">SGA 귀두 · NPA 음경확대</a>
+              <a href="plastic.html?tab=curvature">음경만곡증 교정</a>
+              <a href="plastic.html?tab=foreign">이물질(바세린) 제거</a>
+            </div>
+          </li>
+          <li class="b2-gnb__item">
+            <a href="sexual.html" class="b2-gnb__link">성기능장애</a>
+            <div class="b2-gnb__sub">
+              <a href="sexual.html?tab=pe">조루증 진단·치료</a>
+              <a href="sexual.html?tab=ed">발기부전 · 성기능검사</a>
+            </div>
+          </li>
+          <li class="b2-gnb__item">
+            <a href="vasectomy.html" class="b2-gnb__link">정관수술</a>
+            <div class="b2-gnb__sub">
+              <a href="vasectomy.html?tab=nodao">2mm 무도정관수술</a>
+              <a href="vasectomy.html?tab=reversal">미세정관복원수술</a>
+            </div>
+          </li>
+          <li class="b2-gnb__item">
+            <a href="circumcision.html" class="b2-gnb__link">포경수술</a>
+            <div class="b2-gnb__sub">
+              <a href="circumcision.html?tab=laser">레이저 포경수술</a>
+            </div>
+          </li>
+          <li class="b2-gnb__item">
+            <a href="consult.html" class="b2-gnb__link">상담/예약</a>
+            <div class="b2-gnb__sub">
+              <a href="consult.html?tab=qna">Meet the expert</a>
+              <a href="consult.html?tab=reserve">온라인예약</a>
+              <a href="consult.html?tab=faq">자주 묻는 질문</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="b2-header__actions">
+        <a href="hospital.html?tab=nonbenefit" class="b2-pill b2-pill--ghost">비급여 안내</a>
+        <a href="consult.html?tab=reserve" class="b2-pill b2-pill--blue">사전 예약</a>
+        <button type="button" class="b2-mobile-btn" id="mobileMenuBtn" aria-label="전체 메뉴 열기" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- 모바일 드로어 -->
     <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
       <div class="mobile-drawer-inner">
-        <div class="mobile-drawer-head"><span class="drawer-label">GANGNAM J MENU</span><button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="닫기"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg></button></div>
+        <div class="mobile-drawer-head">
+          <span class="drawer-label">GANGNAM J MENU</span>
+          <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="메뉴 닫기">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
         <ul class="mobile-nav-list">
-          <li><a href="../index.html">홈</a></li><li><a href="hospital.html">병원소개</a></li><li><a href="stone.html">요로결석</a></li><li><a href="implant.html">음경임플란트</a></li><li><a href="prostate.html">전립선</a></li><li><a href="plastic.html">남성성형</a></li><li><a href="sexual.html">성기능장애</a></li><li><a href="vasectomy.html">정관수술</a></li><li><a href="circumcision.html">포경수술</a></li><li><a href="consult.html">상담/예약</a></li>
+          <li><a href="../index.html">홈</a></li>
+          <li><a href="hospital.html">병원소개</a></li>
+          <li><a href="stone.html">요로결석</a></li>
+          <li><a href="implant.html">음경임플란트</a></li>
+          <li><a href="prostate.html">전립선</a></li>
+          <li><a href="plastic.html">남성성형</a></li>
+          <li><a href="sexual.html">성기능장애</a></li>
+          <li><a href="vasectomy.html">정관수술</a></li>
+          <li><a href="circumcision.html">포경수술</a></li>
+          <li><a href="consult.html">상담/예약</a></li>
         </ul>
+        <div class="mobile-drawer-actions">
+          <a href="hospital.html?tab=nonbenefit" class="btn-outline-full">비급여 비용안내</a>
+          <a href="consult.html?tab=reserve" class="btn-primary-full">온라인 예약하기</a>
+        </div>
       </div>
     </div>
   </header>
