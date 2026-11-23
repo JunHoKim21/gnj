@@ -1,0 +1,605 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>강남J비뇨기과의원 | SINCE 1999 좌우 분할 통합 안내</title>
+  <meta name="description" content="1999년 개원 강남J비뇨기과의원. 박천진 대표원장·이웅희 원장 2인 전문의 진료, 요로결석 7종 장비, HoLEP·유로리프트, 음경임플란트, Combi-Operation, 남성성형 통합 안내." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-d1">
+  <!-- 스크롤 프로그레스 바 -->
+  <div class="d1-progress" aria-hidden="true"><div class="d1-progress__bar" id="d1ProgressBar"></div></div>
+
+  <!-- 공식 공지 레이어 팝업 2종 -->
+  <div class="d1-popups" aria-label="공지 팝업">
+    <div class="d1-popup" id="d1PopupSchedule">
+      <a href="pages/hospital.html?tab=hours">
+        <img src="../assets/img/popup_20260824_popup.jpg" alt="강남J비뇨기과 통합 진료시간 안내" class="d1-popup__img" />
+      </a>
+      <div class="d1-popup__foot">
+        <label style="display:inline-flex;align-items:center;gap:6px;cursor:pointer;"><input type="checkbox" class="d1-popup__chk" /> 오늘 하루 보지 않기</label>
+        <button type="button" class="d1-popup__close">닫기</button>
+      </div>
+    </div>
+    <div class="d1-popup" id="d1PopupDoctor">
+      <a href="pages/hospital.html?tab=doctors">
+        <img src="../assets/img/popup_20260810_popup.jpg" alt="이웅희 원장 영입 안내" class="d1-popup__img" />
+      </a>
+      <div class="d1-popup__foot">
+        <label style="display:inline-flex;align-items:center;gap:6px;cursor:pointer;"><input type="checkbox" class="d1-popup__chk" /> 오늘 하루 보지 않기</label>
+        <button type="button" class="d1-popup__close">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Left Fixed Navigation Sidebar (PC >= 1100px)
+       ======================================================================== -->
+  <aside class="sidebar" aria-label="주 네비게이션">
+    <div class="sidebar__head">
+      <a href="index.html" class="sidebar__logo">
+        <img src="../assets/img/common_footer_logo.png" alt="강남J비뇨기과의원" />
+      </a>
+      <span class="sidebar__since">SINCE 1999 · 2인 전문의 진료</span>
+    </div>
+
+    <nav class="sidebar__nav">
+      <div class="nav-group">
+        <button type="button" class="nav-group__head">
+          <span>① 병원소개</span>
+          <svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-group__sub">
+          <a href="pages/hospital.html?tab=doctors" class="nav-sub-link">의료진 소개 (박천진·이웅희)</a>
+          <a href="pages/hospital.html?tab=schedule" class="nav-sub-link">진료안내 · 통합 시간표</a>
+          <a href="pages/hospital.html?tab=tour" class="nav-sub-link">병원 둘러보기</a>
+          <a href="pages/hospital.html?tab=educator" class="nav-sub-link">교육자 박천진 · 대외활동</a>
+          <a href="pages/hospital.html?tab=press" class="nav-sub-link">언론보도자료</a>
+          <a href="pages/hospital.html?tab=videos" class="nav-sub-link">VIDEO GALLERY</a>
+          <a href="pages/hospital.html?tab=location" class="nav-sub-link">연락처 &amp; 오시는 길</a>
+          <a href="pages/hospital.html?tab=nonbenefit" class="nav-sub-link">비급여비용안내</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button type="button" class="nav-group__head">
+          <span>② 요로결석</span>
+          <svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-group__sub">
+          <a href="pages/stone.html?tab=cause" class="nav-sub-link">요로결석 원인·증상</a>
+          <a href="pages/stone.html?tab=diagnosis" class="nav-sub-link">요로결석 진단</a>
+          <a href="pages/stone.html?tab=treatment" class="nav-sub-link">ESWL · URS 치료</a>
+          <a href="pages/stone.html?tab=equip" class="nav-sub-link">보유 장비 7종</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button type="button" class="nav-group__head">
+          <span>③ 음경임플란트</span>
+          <svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-group__sub">
+          <a href="pages/implant.html?tab=overview" class="nav-sub-link">임플란트 원리·대상</a>
+          <a href="pages/implant.html?tab=spectra" class="nav-sub-link">AMS Spectra (굴곡형)</a>
+          <a href="pages/implant.html?tab=3piece" class="nav-sub-link">3-Piece (팽창형)</a>
+          <a href="pages/implant.html?tab=combi" class="nav-sub-link">Combi-Operation</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button type="button" class="nav-group__head">
+          <span>④ 전립선</span>
+          <svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-group__sub">
+          <a href="pages/prostate.html?tab=overview" class="nav-sub-link">전립선 개요</a>
+          <a href="pages/prostate.html?tab=bph" class="nav-sub-link">전립선비대증</a>
+          <a href="pages/prostate.html?tab=holep" class="nav-sub-link">HoLEP 시술</a>
+          <a href="pages/prostate.html?tab=urolift" class="nav-sub-link">유로리프트 (Urolift)</a>
+          <a href="pages/prostate.html?tab=prostatitis" class="nav-sub-link">전립선염·전립선암·전립선통</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button type="button" class="nav-group__head">
+          <span>⑤ 남성성형</span>
+          <svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-group__sub">
+          <a href="pages/plastic.html?tab=glans" class="nav-sub-link">SGA 귀두확대술</a>
+          <a href="pages/plastic.html?tab=penile" class="nav-sub-link">NPA 음경굵기확대술</a>
+          <a href="pages/plastic.html?tab=length" class="nav-sub-link">길이연장술 · 함몰음경</a>
+          <a href="pages/plastic.html?tab=foreign" class="nav-sub-link">음경이물질제거</a>
+          <a href="pages/plastic.html?tab=curvature" class="nav-sub-link">음경만곡증 (백막성형술)</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button type="button" class="nav-group__head">
+          <span>⑥ 성기능장애</span>
+          <svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-group__sub">
+          <a href="pages/sexual.html?tab=premature" class="nav-sub-link">조루증 원인·진단·치료</a>
+          <a href="pages/sexual.html?tab=ed" class="nav-sub-link">발기부전</a>
+          <a href="pages/sexual.html?tab=test" class="nav-sub-link">성기능검사 (도플러·진동각)</a>
+          <a href="pages/sexual.html?tab=treatment" class="nav-sub-link">발기부전 치료</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button type="button" class="nav-group__head">
+          <span>⑦ 정관수술</span>
+          <svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-group__sub">
+          <a href="pages/vasectomy.html?tab=overview" class="nav-sub-link">정관수술 개요</a>
+          <a href="pages/vasectomy.html?tab=nonscalpel" class="nav-sub-link">무도정관수술 (2mm)</a>
+          <a href="pages/vasectomy.html?tab=reversal" class="nav-sub-link">미세정관복원수술</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button type="button" class="nav-group__head">
+          <span>⑧ 포경수술</span>
+          <svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-group__sub">
+          <a href="pages/circumcision.html?tab=laser" class="nav-sub-link">레이저 포경수술</a>
+          <a href="pages/circumcision.html?tab=types" class="nav-sub-link">소매법·무박리·소대성형·베이스라인</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <button type="button" class="nav-group__head">
+          <span>⑨ 상담/예약</span>
+          <svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-group__sub">
+          <a href="pages/consult.html?tab=expert" class="nav-sub-link">Meet the expert (수술상담)</a>
+          <a href="pages/consult.html?tab=reserve" class="nav-sub-link">온라인 간편 예약</a>
+          <a href="pages/consult.html?tab=faq" class="nav-sub-link">자주 묻는 질문 (FAQ)</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidebar__foot">
+      <a href="tel:02-3018-7575" class="sidebar__tel en-num">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        02-3018-7575
+      </a>
+      <div class="sidebar__btn-row">
+        <button type="button" class="sidebar__btn sidebar__btn--kakao js-copy-kakao">
+          <svg class="icon" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          카톡복사
+        </button>
+        <a href="pages/consult.html?tab=reserve" class="sidebar__btn sidebar__btn--reserve">
+          <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          간편예약
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Mobile Top Header (< 1100px) -->
+  <header class="mobile-header">
+    <a href="index.html" class="mobile-header__logo">
+      <img src="../assets/img/common_footer_logo.png" alt="강남J비뇨기과의원" />
+    </a>
+    <div class="mobile-header__actions">
+      <a href="pages/consult.html?tab=reserve" class="btn btn--accent" style="padding:8px 12px; font-size:12px;">간편예약</a>
+      <button type="button" id="openDrawerBtn" aria-label="전체 메뉴 열기" style="padding:6px;">
+        <svg class="icon icon--lg" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer__backdrop" id="closeDrawerBackdrop"></div>
+    <div class="mobile-drawer__panel">
+      <div class="mobile-drawer__head">
+        <img src="../assets/img/common_footer_logo.png" alt="강남J비뇨기과" style="height:24px;" />
+        <button type="button" id="closeDrawerBtn" aria-label="메뉴 닫기">
+          <svg class="icon icon--lg" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="mobile-drawer__body">
+        <div class="nav-group"><a href="pages/hospital.html?tab=doctors" class="nav-group__head">① 병원소개</a></div>
+        <div class="nav-group"><a href="pages/stone.html?tab=cause" class="nav-group__head">② 요로결석</a></div>
+        <div class="nav-group"><a href="pages/implant.html?tab=overview" class="nav-group__head">③ 음경임플란트</a></div>
+        <div class="nav-group"><a href="pages/prostate.html?tab=overview" class="nav-group__head">④ 전립선</a></div>
+        <div class="nav-group"><a href="pages/plastic.html?tab=glans" class="nav-group__head">⑤ 남성성형</a></div>
+        <div class="nav-group"><a href="pages/sexual.html?tab=premature" class="nav-group__head">⑥ 성기능장애</a></div>
+        <div class="nav-group"><a href="pages/vasectomy.html?tab=overview" class="nav-group__head">⑦ 정관수술</a></div>
+        <div class="nav-group"><a href="pages/circumcision.html?tab=laser" class="nav-group__head">⑧ 포경수술</a></div>
+        <div class="nav-group"><a href="pages/consult.html?tab=reserve" class="nav-group__head">⑨ 상담/예약</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Right Scrollable Content
+       ======================================================================== -->
+    <main class="main-wrap">
+    <!-- SECTION 1: 우측 풀폭 시네마틱 히어로 슬라이더 (샘플1 문법) -->
+    <section class="d1-hero" aria-label="강남J비뇨기과 메인 비주얼">
+      <div class="d1-hero__slide is-active">
+        <img src="../assets/img/clinic_lobby.jpg" alt="강남J비뇨기과의원 메인 대리석 리셉션" />
+      </div>
+      <div class="d1-hero__slide">
+        <img src="../assets/img/clinic_lounge_wide.jpg" alt="강남J비뇨기과의원 프라이빗 대기 라운지" />
+      </div>
+      <div class="d1-hero__slide">
+        <img src="../assets/img/clinic_private_zone.jpg" alt="강남J비뇨기과의원 독립 대기 공간" />
+      </div>
+      <div class="d1-hero__scrim"></div>
+
+      <div class="d1-hero__body">
+        <div class="content-container">
+          <span class="d1-hero__eyebrow">SINCE 1999 · GANGNAM J UROLOGY</span>
+          <h1 class="d1-hero__title">
+            1999년부터 이어온<br />
+            <span>2인 전문의 협진</span> 비뇨의학 포털
+          </h1>
+          <p class="d1-hero__desc">
+            박천진 대표원장과 세브란스 교수 출신 이웅희 원장의 협진 체제.<br />
+            요로결석 7종 장비, 전립선 HoLEP·유로리프트, 음경임플란트·COMBI-OPERATION까지 원스톱으로 안내합니다.
+          </p>
+          <div class="d1-hero__foot">
+            <div style="display:flex;gap:10px;flex-wrap:wrap;">
+              <a href="pages/consult.html?tab=reserve" class="btn btn--accent">온라인 사전 예약 →</a>
+              <a href="pages/hospital.html?tab=nonbenefit" class="btn btn--outline" style="color:#fff;border-color:rgba(255,255,255,0.4);">비급여 비용안내</a>
+            </div>
+            <div class="d1-hero__pager">
+              <button type="button" class="d1-hero__arrow" id="d1HeroPrev" aria-label="이전 슬라이드">‹</button>
+              <span id="d1HeroIdx">01</span><span>/ 03</span>
+              <button type="button" class="d1-hero__arrow" id="d1HeroNext" aria-label="다음 슬라이드">›</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d1-hero__stats">
+        <div class="content-container">
+          <div class="d1-stats-grid">
+            <div class="d1-stat">
+              <div class="d1-stat__num">1999<small>년</small></div>
+              <div class="d1-stat__label"><strong>강남J 개원</strong>비뇨의학 전문</div>
+            </div>
+            <div class="d1-stat">
+              <div class="d1-stat__num">2<small>인</small></div>
+              <div class="d1-stat__label"><strong>전문의 협진</strong>박천진 · 이웅희</div>
+            </div>
+            <div class="d1-stat">
+              <div class="d1-stat__num">7<small>종</small></div>
+              <div class="d1-stat__label"><strong>결석 전용 장비</strong>ESWL·URS·RIRS</div>
+            </div>
+            <div class="d1-stat">
+              <div class="d1-stat__num">3<small>인</small></div>
+              <div class="d1-stat__label"><strong>정식 간호사팀</strong>3S · No3 지향</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 증상·시술 빠른 검색 & 1분 자가체크 (샘플1 문법) -->
+    <section class="d1-sect">
+      <div class="content-container">
+        <div class="d1-search-box reveal">
+          <div style="text-align:center;">
+            <span class="card__tag">QUICK MEDICAL GUIDE</span>
+            <h2 class="section-title" style="margin-top:6px;">무엇을 도와드릴까요?</h2>
+            <p style="color:#526071;font-size:0.9375rem;">궁금한 증상이나 시술 키워드를 입력하거나 아래 증상을 선택해 보세요.</p>
+          </div>
+
+          <form class="d1-search-pill" id="d1SearchForm" role="search">
+            <input type="text" id="d1SearchInput" placeholder="예: 요로결석, HoLEP, 유로리프트, 음경임플란트, 만곡증, 비급여" autocomplete="off" />
+            <button type="submit">진료 찾기</button>
+          </form>
+
+          <div class="d1-selfcheck">
+            <div>
+              <p style="font-size:0.8125rem;font-weight:700;color:#163A6B;margin-bottom:10px;">1분 증상 빠른 선택</p>
+              <div class="d1-check-chips" role="tablist">
+                <button type="button" class="d1-check-chip is-active" data-check="prostate">배뇨장애 · 야간뇨 · 잔뇨감</button>
+                <button type="button" class="d1-check-chip" data-check="stone">옆구리 통증 · 혈뇨</button>
+                <button type="button" class="d1-check-chip" data-check="implant">약물 미반응 발기부전</button>
+                <button type="button" class="d1-check-chip" data-check="plastic">확대 · 만곡증 · 이물질</button>
+                <button type="button" class="d1-check-chip" data-check="sexual">조루 · 정관 · 포경</button>
+              </div>
+            </div>
+
+            <div class="d1-check-result">
+              <h3 id="d1CheckTitle">전립선 클리닉 (HoLEP · 유로리프트)</h3>
+              <p id="d1CheckDesc">소변 줄기가 가늘어지거나 야간뇨·잔뇨감이 지속된다면 전립선비대증 정밀 진단 후 약물, 유로리프트(결찰술), HoLEP 홀뮴레이저 적출술 중 맞춤 치료를 안내합니다.</p>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <a href="pages/prostate.html" class="btn btn--primary" id="d1CheckLink" style="padding:9px 16px;font-size:0.84375rem;">해당 센터 바로가기 →</a>
+                <a href="pages/consult.html?tab=reserve" class="btn btn--outline" style="padding:9px 16px;font-size:0.84375rem;">사전 예약</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: 호버 확장형 6대 진료센터 비주얼 아코디언 (샘플1 문법) -->
+    <section class="d1-sect d1-sect--sub">
+      <div class="content-container">
+        <div style="margin-bottom:28px;">
+          <span class="card__tag">SPECIALIZED CENTERS</span>
+          <h2 class="section-title" style="margin-top:6px;">강남J 전문 진료센터</h2>
+        </div>
+
+        <div class="d1-accordion reveal">
+          <a href="pages/prostate.html" class="d1-acc-card is-active">
+            <img src="../assets/img/clinic_ultrasound.jpg" alt="전립선 초음파 정밀 진단실" />
+            <div class="d1-acc-card__body">
+              <span class="d1-acc-card__en">01 / PROSTATE</span>
+              <h3>전립선 클리닉</h3>
+              <p class="d1-acc-card__desc">전립선비대증 HoLEP 홀뮴레이저 적출술, 유로리프트(Urolift), 전립선염·암·통증 정밀 진료</p>
+            </div>
+          </a>
+          <a href="pages/stone.html" class="d1-acc-card">
+            <img src="../assets/img/clinic_operating_room.jpg" alt="요로결석 전용 수술실" />
+            <div class="d1-acc-card__body">
+              <span class="d1-acc-card__en">02 / URINARY STONE</span>
+              <h3>요로결석 클리닉</h3>
+              <p class="d1-acc-card__desc">C-arm·ENDOMAT·Holmium Laser 30W·Storz·Lithovue·RIRS·URS 7종 전용 장비 치료</p>
+            </div>
+          </a>
+          <a href="pages/implant.html" class="d1-acc-card">
+            <img src="../assets/img/clinic_operating_gate.jpg" alt="통제구역 멸균 수술센터" />
+            <div class="d1-acc-card__body">
+              <span class="d1-acc-card__en">03 / IMPLANT</span>
+              <h3>음경임플란트</h3>
+              <p class="d1-acc-card__desc">AMS Spectra 굴곡형·3-Piece 팽창형 보형물 및 전립선 HoLEP 동시 수술(COMBI-OPERATION)</p>
+            </div>
+          </a>
+          <a href="pages/plastic.html" class="d1-acc-card">
+            <img src="../assets/img/clinic_consult_room.jpg" alt="1:1 프라이빗 대표원장 진료실" />
+            <div class="d1-acc-card__body">
+              <span class="d1-acc-card__en">04 / ANDROLOGY</span>
+              <h3>남성성형 · 재건</h3>
+              <p class="d1-acc-card__desc">SGA 귀두·NPA 음경확대, 음경만곡증 교정 및 바세린·파라핀 등 이물질 제거</p>
+            </div>
+          </a>
+          <a href="pages/sexual.html" class="d1-acc-card">
+            <img src="../assets/img/clinic_exam_room.jpg" alt="성기능검사 및 자기장실" />
+            <div class="d1-acc-card__body">
+              <span class="d1-acc-card__en">05 / SEXUAL</span>
+              <h3>성기능장애</h3>
+              <p class="d1-acc-card__desc">성기능검사·음경혈관 도플러검사·진동각검사로 원인을 분석하는 조루·발기부전 치료</p>
+            </div>
+          </a>
+          <a href="pages/vasectomy.html" class="d1-acc-card">
+            <img src="../assets/img/clinic_tour_1.jpg" alt="강남J비뇨기과 시그니처 로고월" />
+            <div class="d1-acc-card__body">
+              <span class="d1-acc-card__en">06 / VASECTOMY</span>
+              <h3>정관 · 포경수술</h3>
+              <p class="d1-acc-card__desc">2mm Single Puncture 무도정관수술, 미세정관복원술, 소매법 디자인 레이저포경수술</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: 초대형 슬로건 & 4대 수술 안전 원칙 (DARK) -->
+    <section class="d1-dark-band">
+      <div class="content-container">
+        <div class="d1-statement reveal">
+          <div class="d1-statement__big">3S · No3 Method</div>
+          <p style="color:rgba(255,255,255,0.72);font-size:0.95rem;">Safe · Simple · Speed &nbsp;|&nbsp; 통증 · 출혈 · 합병증 부담을 줄이는 강남J 수술 안전 프로토콜</p>
+        </div>
+
+        <div class="d1-safety-grid reveal">
+          <article class="d1-safety-card">
+            <span>01</span>
+            <h3>3S · No3 원칙 지향</h3>
+            <p>Safe·Simple·Speed 3S 원칙을 바탕으로 통증·출혈·합병증 부담을 줄이는 안전한 수술과 회복을 지향합니다.</p>
+          </article>
+          <article class="d1-safety-card">
+            <span>02</span>
+            <h3>최소 국소 신경마취 · 모니터링</h3>
+            <p>최소 국소 신경마취와 함께 맥박·산소포화도·혈압·호흡수 실시간 생체 활력증후 모니터링을 시행합니다.</p>
+          </article>
+          <article class="d1-safety-card">
+            <span>03</span>
+            <h3>IOM 음악요법 · 3인 수술팀</h3>
+            <p>수술 중 음악요법(IOM)을 적용하며, 베테랑 정식 간호사 출신 3인 수술팀이 협진합니다.</p>
+          </article>
+          <article class="d1-safety-card">
+            <span>04</span>
+            <h3>자체 소독기 · 고안 수술기구</h3>
+            <p>자체 설계·제작 첨단 소독기계 및 자외선 소독기, 원장이 직접 고안한 수술기구로 멸균 환경을 유지합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: 2인 전문의 + 통합 진료시간표 + 하단 퀵상담 바 -->
+    <section class="d1-sect d1-sect--sub">
+      <div class="content-container">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;margin-bottom:24px;">
+          <div>
+            <span class="card__tag">MEDICAL SPECIALISTS</span>
+            <h2 class="section-title" style="margin-top:6px;">2인 비뇨의학과 전문의 &amp; 진료시간표</h2>
+          </div>
+          <a href="pages/hospital.html?tab=doctors" class="btn btn--outline" style="padding:9px 16px;font-size:0.84375rem;">의료진 · 병원소개 상세 →</a>
+        </div>
+
+        <div class="d1-doctors-grid reveal">
+          <article class="d1-doc-card">
+            <div class="d1-doc-card__photo">
+              <img src="../assets/img/doctor_park.jpg" alt="박천진 대표원장" />
+            </div>
+            <div class="d1-doc-card__body">
+              <span class="d1-doc-card__role">REPRESENTATIVE DIRECTOR</span>
+              <h3 class="d1-doc-card__name">박천진 <span>대표원장</span></h3>
+              <p class="d1-doc-card__sub">비뇨의학과 전문의 · 강남J비뇨기과 대표원장</p>
+              <ul class="d1-doc-card__bio">
+                <li>1999년 6월부터 직접 의료상담 및 비뇨의학과 진료 운영</li>
+                <li>대한비뇨기과학회 학술위원</li>
+                <li>HoLEP · 음경임플란트 · COMBI-OPERATION 라이브 서저리</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="d1-doc-card">
+            <div class="d1-doc-card__photo">
+              <img src="../assets/img/doctor_lee.jpg" alt="이웅희 원장" />
+            </div>
+            <div class="d1-doc-card__body">
+              <span class="d1-doc-card__role">DIRECTOR · M.D., Ph.D.</span>
+              <h3 class="d1-doc-card__name">이웅희 <span>원장</span></h3>
+              <p class="d1-doc-card__sub">비뇨의학과 전문의 · 연세의대 의학박사 (2026.08.21 진료 개시)</p>
+              <ul class="d1-doc-card__bio">
+                <li>연세대학교 의과대학 비뇨의학교실(세브란스) 교수 역임</li>
+                <li>현 연세대학교 의과대학 외래교수 · 2000 아시아 성학회 사무총장 역임</li>
+                <li>대한 비뇨의학과 의사회 학술이사</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="d1-schedule-card reveal">
+          <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:10px;margin-bottom:16px;">
+            <div>
+              <span class="card__tag">CLINIC SCHEDULE · 2026.08 기준</span>
+              <h3 style="font-size:1.25rem;font-weight:800;color:#0E1B2E;margin-top:4px;">최신 2인 통합 진료시간표</h3>
+            </div>
+            <div style="font-size:0.84375rem;color:#526071;">
+              <strong>월–금</strong> 09:00–18:00 &nbsp;|&nbsp; <strong>토요일</strong> 09:00–13:00 &nbsp;|&nbsp; <strong style="color:#2D7FF9;">사전 예약제</strong>
+            </div>
+          </div>
+
+          <div style="overflow-x:auto;border:1px solid #E5E9F0;border-radius:12px;">
+            <table class="d1-schedule-table" style="width:100%;border-collapse:collapse;text-align:center;font-size:0.875rem;">
+              <thead>
+                <tr style="background:#0E1B2E;color:#FFFFFF;">
+                  <th style="padding:11px;">의료진</th>
+                  <th style="padding:11px;">구분</th>
+                  <th style="padding:11px;">월</th>
+                  <th style="padding:11px;">화</th>
+                  <th style="padding:11px;">수</th>
+                  <th style="padding:11px;">목</th>
+                  <th style="padding:11px;">금</th>
+                  <th style="padding:11px;">토</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom:1px solid #E5E9F0;">
+                  <th rowspan="2" style="padding:10px;background:#F8FAFC;color:#0E1B2E;">이웅희<br /><span style="font-size:0.75rem;font-weight:400;color:#64748B;">전문의</span></th>
+                  <td style="padding:9px;color:#64748B;font-weight:600;">오전</td><td>진료</td><td>진료</td><td>진료</td><td style="background:#FEF2F2;color:#B91C1C;font-weight:700;">휴진</td><td>진료</td><td>진료</td>
+                </tr>
+                <tr style="border-bottom:1px solid #E5E9F0;">
+                  <td style="padding:9px;color:#64748B;font-weight:600;">오후</td><td>진료</td><td>진료</td><td>진료</td><td style="background:#FEF2F2;color:#B91C1C;font-weight:700;">휴진</td><td>진료</td><td style="color:#94A3B8;">-</td>
+                </tr>
+                <tr style="border-bottom:1px solid #E5E9F0;">
+                  <th rowspan="2" style="padding:10px;background:#F8FAFC;color:#0E1B2E;">박천진<br /><span style="font-size:0.75rem;font-weight:400;color:#64748B;">대표원장</span></th>
+                  <td style="padding:9px;color:#64748B;font-weight:600;">오전</td><td style="color:#163A6B;font-weight:700;">수술/진료</td><td style="color:#163A6B;font-weight:700;">수술/진료</td><td style="color:#163A6B;font-weight:700;">수술/진료</td><td style="color:#163A6B;font-weight:700;">수술/진료</td><td style="color:#163A6B;font-weight:700;">수술/진료</td><td>진료</td>
+                </tr>
+                <tr>
+                  <td style="padding:9px;color:#64748B;font-weight:600;">오후</td><td style="background:#FEF2F2;color:#B91C1C;font-weight:700;">휴진</td><td>진료</td><td>진료</td><td style="background:#FEF2F2;color:#B91C1C;font-weight:700;">휴진</td><td>진료</td><td style="color:#94A3B8;">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:12px;font-size:0.84375rem;color:#64748B;">
+            강남J비뇨기과는 사전 예약진료로 운영되고 있어, 예약 없이 방문하실 경우 대기시간이 발생하거나 당일 진료가 어려울 수 있습니다. 가급적 <strong>02-3018-7575</strong>로 사전 예약 후 내원해 주시면 감사하겠습니다.
+          </p>
+        </div>
+
+        <div class="d1-quick-bar reveal">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+            <h3 style="font-size:1.1rem;font-weight:700;">1:1 비밀보장 간편 사전 예약</h3>
+            <span style="font-size:0.84375rem;color:rgba(255,255,255,0.72);">대표전화 <strong>02-3018-7575</strong> · 24시간 문자 <strong>010-9190-7575</strong> · 카톡 <strong>gnjurology</strong></span>
+          </div>
+          <form id="d1QuickForm">
+            <div class="d1-quick-grid">
+              <input type="text" id="d1Name" class="d1-q-input" placeholder="성함 (또는 이니셜)" required />
+              <input type="tel" id="d1Phone" class="d1-q-input" placeholder="연락처 (010-0000-0000)" required />
+              <select id="d1Subject" class="d1-q-select" aria-label="진료과목">
+                <option value="전립선 (HoLEP·유로리프트)">전립선 (HoLEP·유로리프트)</option>
+                <option value="요로결석">요로결석</option>
+                <option value="음경임플란트 · COMBI">음경임플란트 · COMBI</option>
+                <option value="남성성형 · 만곡증 · 이물질">남성성형 · 만곡증 · 이물질</option>
+                <option value="성기능장애 (조루·발기부전)">성기능장애 (조루·발기부전)</option>
+                <option value="정관수술 · 포경수술">정관수술 · 포경수술</option>
+              </select>
+              <select id="d1Time" class="d1-q-select" aria-label="희망시간">
+                <option value="평일 오전 (09:00~12:30)">평일 오전 (09:00~12:30)</option>
+                <option value="평일 오후 (14:00~18:00)">평일 오후 (14:00~18:00)</option>
+                <option value="토요일 오전 (09:00~13:00)">토요일 오전 (09:00~13:00)</option>
+                <option value="문자/카톡 우선 안내">문자/카톡 우선 안내</option>
+              </select>
+              <button type="submit" class="d1-q-btn">예약 신청</button>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:0.8125rem;color:rgba(255,255,255,0.76);">
+              <label style="display:inline-flex;align-items:center;gap:8px;cursor:pointer;">
+                <input type="checkbox" id="d1Agree" required />
+                <span>개인정보 수집 및 이용에 동의합니다. (1:1 비밀보장 예약·상담 목적 외 미사용)</span>
+              </label>
+              <span id="d1QuickFeedback" style="color:#93C5FD;font-weight:600;" aria-live="polite"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content-container">
+        <div class="footer__info">
+          상호: 강남J비뇨기과의원 | 대표원장: 박천진 | 사업자등록번호: <span class="en-num">120-90-16660</span><br />
+          주소: 서울시 강남구 학동로 203 4F (7호선 학동역 8·9번 출구 사이) | TEL: <span class="en-num">02-3018-7575</span> | 24시간 문자: <span class="en-num">010-9190-7575</span> | 카톡: gnjurology | FAX: <span class="en-num">02-516-2030</span>
+        </div>
+        <div class="footer__copy">Copyright © 1999 GANGNAM J UROLOGY CLINIC. All rights reserved.</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Mobile Bottom 4-Button Bar -->
+  <nav class="mobile-bar" aria-label="모바일 빠른 메뉴">
+    <a href="tel:02-3018-7575" class="mobile-bar__btn">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>전화</span>
+    </a>
+    <a href="sms:010-9190-7575" class="mobile-bar__btn">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>문자</span>
+    </a>
+    <button type="button" class="mobile-bar__btn js-copy-kakao">
+      <svg class="icon" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      <span>카톡복사</span>
+    </button>
+    <a href="pages/consult.html?tab=reserve" class="mobile-bar__btn mobile-bar__btn--primary">
+      <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>예약</span>
+    </a>
+  </nav>
+
+  <!-- Video Modal -->
+  <div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+    <div class="modal__backdrop js-close-modal"></div>
+    <div class="modal__dialog">
+      <div class="modal__head">
+        <strong id="videoModalTitle">영상 보기</strong>
+        <button type="button" class="js-close-modal" aria-label="닫기"><svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="modal__body">
+        <div class="video-iframe-wrap" id="videoContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

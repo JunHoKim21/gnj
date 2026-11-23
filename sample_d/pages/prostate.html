@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>전립선 센터 | 강남J비뇨기과의원</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <aside class="sidebar" aria-label="주 네비게이션">
+    <div class="sidebar__head"><a href="../index.html" class="sidebar__logo"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과의원" /></a><span class="sidebar__since">SINCE 1999 · 2인 전문의 진료</span></div>
+    <nav class="sidebar__nav">
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>① 병원소개</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="hospital.html?tab=doctors" class="nav-sub-link">의료진 소개</a><a href="hospital.html?tab=schedule" class="nav-sub-link">진료시간표</a><a href="hospital.html?tab=nonbenefit" class="nav-sub-link">비급여비용안내</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>② 요로결석</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="stone.html?tab=cause" class="nav-sub-link">원인·증상</a><a href="stone.html?tab=equip" class="nav-sub-link">보유 장비 7종</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>③ 음경임플란트</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="implant.html?tab=overview" class="nav-sub-link">임플란트 원리</a><a href="implant.html?tab=combi" class="nav-sub-link">Combi-Operation</a></div></div>
+      <div class="nav-group is-active is-open"><button type="button" class="nav-group__head"><span>④ 전립선</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="prostate.html?tab=overview" class="nav-sub-link">전립선 개요</a><a href="prostate.html?tab=bph" class="nav-sub-link">전립선비대증</a><a href="prostate.html?tab=holep" class="nav-sub-link">HoLEP 시술</a><a href="prostate.html?tab=urolift" class="nav-sub-link">유로리프트 (Urolift)</a><a href="prostate.html?tab=prostatitis" class="nav-sub-link">전립선염·암·통</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑤ 남성성형</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="plastic.html?tab=glans" class="nav-sub-link">SGA · NPA 확대</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑥ 성기능장애</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="sexual.html?tab=premature" class="nav-sub-link">조루증 · 발기부전</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑦ 정관수술</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="vasectomy.html?tab=nonscalpel" class="nav-sub-link">무도정관 · 복원</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑧ 포경수술</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="circumcision.html?tab=laser" class="nav-sub-link">레이저 포경수술</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑨ 상담/예약</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="consult.html?tab=reserve" class="nav-sub-link">온라인 간편 예약</a></div></div>
+    </nav>
+    <div class="sidebar__foot"><a href="tel:02-3018-7575" class="sidebar__tel en-num">02-3018-7575</a><div class="sidebar__btn-row"><button type="button" class="sidebar__btn sidebar__btn--kakao js-copy-kakao">카톡복사</button><a href="consult.html?tab=reserve" class="sidebar__btn sidebar__btn--reserve">간편예약</a></div></div>
+  </aside>
+
+  <header class="mobile-header">
+    <a href="../index.html" class="mobile-header__logo"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과의원" /></a>
+    <div class="mobile-header__actions"><a href="consult.html?tab=reserve" class="btn btn--accent" style="padding:8px 12px; font-size:12px;">간편예약</a><button type="button" id="openDrawerBtn" aria-label="메뉴 열기" style="padding:6px;"><svg class="icon icon--lg" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div>
+  </header>
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true"><div class="mobile-drawer__backdrop" id="closeDrawerBackdrop"></div><div class="mobile-drawer__panel"><div class="mobile-drawer__head"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과" style="height:24px;" /><button type="button" id="closeDrawerBtn" aria-label="메뉴 닫기"><svg class="icon icon--lg" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div><div class="mobile-drawer__body"><div class="nav-group"><a href="../index.html" class="nav-group__head">홈으로</a></div><div class="nav-group"><a href="hospital.html?tab=doctors" class="nav-group__head">① 병원소개</a></div><div class="nav-group"><a href="stone.html?tab=cause" class="nav-group__head">② 요로결석</a></div><div class="nav-group"><a href="implant.html?tab=overview" class="nav-group__head">③ 음경임플란트</a></div><div class="nav-group"><a href="prostate.html?tab=overview" class="nav-group__head">④ 전립선</a></div><div class="nav-group"><a href="plastic.html?tab=glans" class="nav-group__head">⑤ 남성성형</a></div><div class="nav-group"><a href="sexual.html?tab=premature" class="nav-group__head">⑥ 성기능장애</a></div><div class="nav-group"><a href="vasectomy.html?tab=overview" class="nav-group__head">⑦ 정관수술</a></div><div class="nav-group"><a href="circumcision.html?tab=laser" class="nav-group__head">⑧ 포경수술</a></div><div class="nav-group"><a href="consult.html?tab=reserve" class="nav-group__head">⑨ 상담/예약</a></div></div></div></div>
+
+  <main class="main-wrap">
+    <section class="subpage-hero">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="../index.html">홈</a> <span>/</span> <strong>④ 전립선</strong></div>
+        <span class="eyebrow">PROSTATE CENTER</span>
+        <h1 class="page-title">전립선 클리닉</h1>
+        <p class="section-desc">배뇨장애의 원인을 정밀 검사하고, 환자의 전립선 형태와 연령에 맞춰 HoLEP 및 유로리프트 시술을 시행합니다.</p>
+        <div class="sub-tabs">
+          <button type="button" class="sub-tab is-active" data-tab="overview">전립선 개요</button>
+          <button type="button" class="sub-tab" data-tab="bph">전립선비대증 · 검사</button>
+          <button type="button" class="sub-tab" data-tab="holep">HoLEP 시술</button>
+          <button type="button" class="sub-tab" data-tab="urolift">유로리프트 (Urolift)</button>
+          <button type="button" class="sub-tab" data-tab="prostatitis">전립선염 · 암 · 통</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-container">
+      <section class="tab-panel is-active" id="tab-overview">
+        <div class="grid-2" style="align-items:center;">
+          <div>
+            <h2 class="section-title">전립선 질환 통합 진료</h2>
+            <p class="section-desc">방광 바로 아래 호두 크기 전립선이 비대해지거나 염증이 발생하면 야간뇨·빈뇨·잔뇨 등 배뇨장애와 사정장애가 나타날 수 있습니다. 크기만으로 진단하지 않고 요속검사 및 초음파로 종합 평가합니다.</p>
+          </div>
+          <div style="border-radius:12px; overflow:hidden; border:1px solid var(--border);"><img src="../../assets/img/clinic_ultrasound.jpg" alt="전립선 질환 치료" /></div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="tab-bph">
+        <h2 class="section-title">전립선비대증 수술 전 준비사항 5종</h2>
+        <div class="grid-3" style="margin-top:24px;">
+          <div class="card"><span class="card__tag">01</span><h3 class="card__title">혈액검사 (CBC, PSA)</h3><p class="card__desc">전립선특이항원(PSA) 및 기본 혈액 검사</p></div>
+          <div class="card"><span class="card__tag">02</span><h3 class="card__title">소변검사 (Urinalysis)</h3><p class="card__desc">요로감염 및 혈뇨 여부 확인</p></div>
+          <div class="card"><span class="card__tag">03</span><h3 class="card__title">요속검사 (Uroflowmetry)</h3><p class="card__desc">배뇨 속도 및 패턴 객관적 측정</p></div>
+          <div class="card"><span class="card__tag">04</span><h3 class="card__title">잔뇨 초음파 검사</h3><p class="card__desc">배뇨 후 방광 내 잔여 소변량 측정</p></div>
+          <div class="card"><span class="card__tag">05</span><h3 class="card__title">경직장 초음파 검사</h3><p class="card__desc">전립선 크기·결절·해부학적 구조 확인</p></div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="tab-holep">
+        <h2 class="section-title">HoLEP (홀뮴레이저 전립선종 적출술)</h2>
+        <div class="card" style="margin-top:20px;">
+          <p class="card__desc" style="margin-bottom:14px;">침투깊이 0.4mm의 홀뮴레이저로 비대해진 전립선 조직만 섬세하게 박리·지혈하여 제거합니다. 수술 후 역행성사정 가능성에 대해 사전에 충분히 안내해 드립니다.</p>
+          <ul class="bullet-list">
+            <li>수술 후 1~3일 자가/내원 소변줄 제거</li>
+            <li>일시적 요급박 증상은 회복 과정에서 점차 소실</li>
+            <li>충분한 수분 섭취, 육체노동 금지, 회복 시까지 금연·금주·성관계 금지</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="tab-urolift">
+        <h2 class="section-title">유로리프트 (전립선비대증 결찰술)</h2>
+        <div class="card" style="margin-top:20px;">
+          <p class="card__desc">비대해진 전립선 양쪽 벽을 의료결찰사로 묶어 좁아진 요도를 확보하는 최소침습 시술입니다. 사정 기능 보존에 유리하나 추후 비대증 재발 가능성에 대해 사전 설명 후 진행합니다. (비급여 안내: 400~1,000만 원)</p>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="tab-prostatitis">
+        <h2 class="section-title">전립선염 · 전립선암 · 전립선통</h2>
+        <div class="grid-3" style="margin-top:24px;">
+          <div class="card"><h3 class="card__title">전립선염</h3><p class="card__desc">세균성·비세균성 감별 진단 후 맞춤 약물 및 물리치료</p></div>
+          <div class="card"><h3 class="card__title">전립선암 검진</h3><p class="card__desc">PSA, PHI 검사 및 경직장 초음파를 통한 조기 선별</p></div>
+          <div class="card"><h3 class="card__title">전립선통</h3><p class="card__desc">만성 골반통증후군 원인 감별 및 생활·약물 관리</p></div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer"><div class="content-container"><div class="footer__info">상호: 강남J비뇨기과의원 | 대표원장: 박천진 | 사업자등록번호: <span class="en-num">120-90-16660</span> | TEL: <span class="en-num">02-3018-7575</span></div><div class="footer__copy">Copyright © 1999 GANGNAM J UROLOGY CLINIC. All rights reserved.</div></div></footer>
+  </main>
+
+  <nav class="mobile-bar" aria-label="모바일 빠른 메뉴"><a href="tel:02-3018-7575" class="mobile-bar__btn"><span>전화</span></a><a href="sms:010-9190-7575" class="mobile-bar__btn"><span>문자</span></a><button type="button" class="mobile-bar__btn js-copy-kakao"><span>카톡복사</span></button><a href="consult.html?tab=reserve" class="mobile-bar__btn mobile-bar__btn--primary"><span>예약</span></a></nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="../script.js"></script>
+</body>
+</html>

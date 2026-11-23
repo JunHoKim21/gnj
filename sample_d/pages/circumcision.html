@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>포경수술 센터 | 강남J비뇨기과의원</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <aside class="sidebar" aria-label="주 네비게이션">
+    <div class="sidebar__head"><a href="../index.html" class="sidebar__logo"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과의원" /></a><span class="sidebar__since">SINCE 1999 · 2인 전문의 진료</span></div>
+    <nav class="sidebar__nav">
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>① 병원소개</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="hospital.html?tab=doctors" class="nav-sub-link">의료진 소개</a><a href="hospital.html?tab=nonbenefit" class="nav-sub-link">비급여비용안내</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>② 요로결석</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="stone.html?tab=cause" class="nav-sub-link">요로결석</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>③ 음경임플란트</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="implant.html?tab=overview" class="nav-sub-link">음경임플란트</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>④ 전립선</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="prostate.html?tab=overview" class="nav-sub-link">전립선</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑤ 남성성형</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="plastic.html?tab=glans" class="nav-sub-link">남성성형</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑥ 성기능장애</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="sexual.html?tab=premature" class="nav-sub-link">조루증 · 발기부전</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑦ 정관수술</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="vasectomy.html?tab=nonscalpel" class="nav-sub-link">무도정관 · 복원</a></div></div>
+      <div class="nav-group is-active is-open"><button type="button" class="nav-group__head"><span>⑧ 포경수술</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="circumcision.html?tab=laser" class="nav-sub-link">레이저 포경수술</a><a href="circumcision.html?tab=types" class="nav-sub-link">시술 방식 비교</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑨ 상담/예약</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="consult.html?tab=reserve" class="nav-sub-link">온라인 간편 예약</a></div></div>
+    </nav>
+    <div class="sidebar__foot"><a href="tel:02-3018-7575" class="sidebar__tel en-num">02-3018-7575</a><div class="sidebar__btn-row"><button type="button" class="sidebar__btn sidebar__btn--kakao js-copy-kakao">카톡복사</button><a href="consult.html?tab=reserve" class="sidebar__btn sidebar__btn--reserve">간편예약</a></div></div>
+  </aside>
+
+  <header class="mobile-header"><a href="../index.html" class="mobile-header__logo"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과의원" /></a><div class="mobile-header__actions"><a href="consult.html?tab=reserve" class="btn btn--accent" style="padding:8px 12px; font-size:12px;">간편예약</a><button type="button" id="openDrawerBtn" aria-label="메뉴 열기" style="padding:6px;"><svg class="icon icon--lg" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div></header>
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true"><div class="mobile-drawer__backdrop" id="closeDrawerBackdrop"></div><div class="mobile-drawer__panel"><div class="mobile-drawer__head"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과" style="height:24px;" /><button type="button" id="closeDrawerBtn" aria-label="메뉴 닫기"><svg class="icon icon--lg" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div><div class="mobile-drawer__body"><div class="nav-group"><a href="../index.html" class="nav-group__head">홈으로</a></div><div class="nav-group"><a href="hospital.html?tab=doctors" class="nav-group__head">① 병원소개</a></div><div class="nav-group"><a href="stone.html?tab=cause" class="nav-group__head">② 요로결석</a></div><div class="nav-group"><a href="implant.html?tab=overview" class="nav-group__head">③ 음경임플란트</a></div><div class="nav-group"><a href="prostate.html?tab=overview" class="nav-group__head">④ 전립선</a></div><div class="nav-group"><a href="plastic.html?tab=glans" class="nav-group__head">⑤ 남성성형</a></div><div class="nav-group"><a href="sexual.html?tab=premature" class="nav-group__head">⑥ 성기능장애</a></div><div class="nav-group"><a href="vasectomy.html?tab=overview" class="nav-group__head">⑦ 정관수술</a></div><div class="nav-group"><a href="circumcision.html?tab=laser" class="nav-group__head">⑧ 포경수술</a></div><div class="nav-group"><a href="consult.html?tab=reserve" class="nav-group__head">⑨ 상담/예약</a></div></div></div></div>
+
+  <main class="main-wrap">
+    <section class="subpage-hero">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="../index.html">홈</a> <span>/</span> <strong>⑧ 포경수술</strong></div>
+        <span class="eyebrow">CIRCUMCISION</span>
+        <h1 class="page-title">포경수술 클리닉</h1>
+        <p class="section-desc">소매법 디자인부터 귀두포피무박리 특수포경, 모피소대성형술, 베이스라인 포경까지 개인 해부학적 특성에 맞춰 시행합니다.</p>
+        <div class="sub-tabs">
+          <button type="button" class="sub-tab is-active" data-tab="laser">레이저 포경수술</button>
+          <button type="button" class="sub-tab" data-tab="types">4가지 시술 방식</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-container">
+      <section class="tab-panel is-active" id="tab-laser">
+        <h2 class="section-title">레이저 포경수술</h2>
+        <div class="card" style="margin-top:20px;">
+          <p class="card__desc">발기 시 피부 여유분을 정밀하게 디자인한 뒤 레이저를 이용해 출혈 부담을 줄이며 포피를 정리하는 방식입니다. 통증·출혈·합병증 부담을 줄이는 No3 원칙을 지향합니다.</p>
+        </div>
+      </section>
+      <section class="tab-panel" id="tab-types">
+        <h2 class="section-title">개인 맞춤형 4가지 포경수술 방식</h2>
+        <div class="grid-2" style="margin-top:24px;">
+          <div class="card"><h3 class="card__title">소매법 디자인 포경</h3><p class="card__desc">표피 외층만 정밀하게 절제하여 내부 조직을 보존하는 방식 (비급여 80만 원)</p></div>
+          <div class="card"><h3 class="card__title">귀두포피무박리 특수포경</h3><p class="card__desc">귀두와 포피 유착 부위 손상을 최소화하는 특수 술기 (비급여 80만 원)</p></div>
+          <div class="card"><h3 class="card__title">모피소대성형술</h3><p class="card__desc">짧은 음경 소대로 인한 당김 현상을 함께 교정 (비급여 80만 원)</p></div>
+          <div class="card"><h3 class="card__title">베이스라인 포경</h3><p class="card__desc">음경 기저부 절개를 통해 귀두 주변 흉터를 최소화 (비급여 150만 원)</p></div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer"><div class="content-container"><div class="footer__info">상호: 강남J비뇨기과의원 | 대표원장: 박천진 | 사업자등록번호: <span class="en-num">120-90-16660</span> | TEL: <span class="en-num">02-3018-7575</span></div><div class="footer__copy">Copyright © 1999 GANGNAM J UROLOGY CLINIC. All rights reserved.</div></div></footer>
+  </main>
+
+  <nav class="mobile-bar" aria-label="모바일 빠른 메뉴"><a href="tel:02-3018-7575" class="mobile-bar__btn"><span>전화</span></a><a href="sms:010-9190-7575" class="mobile-bar__btn"><span>문자</span></a><button type="button" class="mobile-bar__btn js-copy-kakao"><span>카톡복사</span></button><a href="consult.html?tab=reserve" class="mobile-bar__btn mobile-bar__btn--primary"><span>예약</span></a></nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>요로결석 센터 | 강남J비뇨기과의원</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <aside class="sidebar" aria-label="주 네비게이션">
+    <div class="sidebar__head">
+      <a href="../index.html" class="sidebar__logo"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과의원" /></a>
+      <span class="sidebar__since">SINCE 1999 · 2인 전문의 진료</span>
+    </div>
+    <nav class="sidebar__nav">
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>① 병원소개</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="hospital.html?tab=doctors" class="nav-sub-link">의료진 소개</a><a href="hospital.html?tab=schedule" class="nav-sub-link">진료시간표</a><a href="hospital.html?tab=nonbenefit" class="nav-sub-link">비급여비용안내</a></div></div>
+      <div class="nav-group is-active is-open"><button type="button" class="nav-group__head"><span>② 요로결석</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="stone.html?tab=cause" class="nav-sub-link">요로결석 원인·증상</a><a href="stone.html?tab=diagnosis" class="nav-sub-link">요로결석 진단</a><a href="stone.html?tab=treatment" class="nav-sub-link">ESWL · URS 치료</a><a href="stone.html?tab=equip" class="nav-sub-link">보유 장비 7종</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>③ 음경임플란트</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="implant.html?tab=overview" class="nav-sub-link">임플란트 원리·대상</a><a href="implant.html?tab=combi" class="nav-sub-link">Combi-Operation</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>④ 전립선</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="prostate.html?tab=overview" class="nav-sub-link">전립선 개요</a><a href="prostate.html?tab=holep" class="nav-sub-link">HoLEP · 유로리프트</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑤ 남성성형</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="plastic.html?tab=glans" class="nav-sub-link">SGA · NPA 확대</a><a href="plastic.html?tab=foreign" class="nav-sub-link">이물질제거 · 만곡증</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑥ 성기능장애</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="sexual.html?tab=premature" class="nav-sub-link">조루증 · 발기부전</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑦ 정관수술</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="vasectomy.html?tab=nonscalpel" class="nav-sub-link">무도정관 · 복원</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑧ 포경수술</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="circumcision.html?tab=laser" class="nav-sub-link">레이저 포경수술</a></div></div>
+      <div class="nav-group"><button type="button" class="nav-group__head"><span>⑨ 상담/예약</span><svg class="icon nav-group__arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="nav-group__sub"><a href="consult.html?tab=reserve" class="nav-sub-link">온라인 간편 예약</a></div></div>
+    </nav>
+    <div class="sidebar__foot">
+      <a href="tel:02-3018-7575" class="sidebar__tel en-num">02-3018-7575</a>
+      <div class="sidebar__btn-row"><button type="button" class="sidebar__btn sidebar__btn--kakao js-copy-kakao">카톡복사</button><a href="consult.html?tab=reserve" class="sidebar__btn sidebar__btn--reserve">간편예약</a></div>
+    </div>
+  </aside>
+
+  <header class="mobile-header">
+    <a href="../index.html" class="mobile-header__logo"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과의원" /></a>
+    <div class="mobile-header__actions"><a href="consult.html?tab=reserve" class="btn btn--accent" style="padding:8px 12px; font-size:12px;">간편예약</a><button type="button" id="openDrawerBtn" aria-label="메뉴 열기" style="padding:6px;"><svg class="icon icon--lg" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div>
+  </header>
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true"><div class="mobile-drawer__backdrop" id="closeDrawerBackdrop"></div><div class="mobile-drawer__panel"><div class="mobile-drawer__head"><img src="../../assets/img/common_footer_logo.png" alt="강남J비뇨기과" style="height:24px;" /><button type="button" id="closeDrawerBtn" aria-label="메뉴 닫기"><svg class="icon icon--lg" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div><div class="mobile-drawer__body"><div class="nav-group"><a href="../index.html" class="nav-group__head">홈으로</a></div><div class="nav-group"><a href="hospital.html?tab=doctors" class="nav-group__head">① 병원소개</a></div><div class="nav-group"><a href="stone.html?tab=cause" class="nav-group__head">② 요로결석</a></div><div class="nav-group"><a href="implant.html?tab=overview" class="nav-group__head">③ 음경임플란트</a></div><div class="nav-group"><a href="prostate.html?tab=overview" class="nav-group__head">④ 전립선</a></div><div class="nav-group"><a href="plastic.html?tab=glans" class="nav-group__head">⑤ 남성성형</a></div><div class="nav-group"><a href="sexual.html?tab=premature" class="nav-group__head">⑥ 성기능장애</a></div><div class="nav-group"><a href="vasectomy.html?tab=overview" class="nav-group__head">⑦ 정관수술</a></div><div class="nav-group"><a href="circumcision.html?tab=laser" class="nav-group__head">⑧ 포경수술</a></div><div class="nav-group"><a href="consult.html?tab=reserve" class="nav-group__head">⑨ 상담/예약</a></div></div></div></div>
+
+  <main class="main-wrap">
+    <section class="subpage-hero">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="../index.html">홈</a> <span>/</span> <strong>② 요로결석</strong></div>
+        <span class="eyebrow">URINARY STONE CENTER</span>
+        <h1 class="page-title">요로결석 클리닉</h1>
+        <p class="section-desc">신장·요관·방광·요도 결석의 위치와 크기를 정밀 진단하고, 체외충격파쇄석술(ESWL) 및 요관내시경(URS/RIRS)으로 치료합니다.</p>
+        <div class="sub-tabs">
+          <button type="button" class="sub-tab is-active" data-tab="cause">원인 · 증상</button>
+          <button type="button" class="sub-tab" data-tab="diagnosis">정밀 진단</button>
+          <button type="button" class="sub-tab" data-tab="treatment">ESWL · URS 치료</button>
+          <button type="button" class="sub-tab" data-tab="equip">보유 치료장비 7종</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-container">
+      <section class="tab-panel is-active" id="tab-cause">
+        <div class="grid-2" style="align-items:center;">
+          <div>
+            <h2 class="section-title">요로결석이란?</h2>
+            <p class="section-desc" style="margin-bottom:20px;">신장, 요관, 방광, 요도 등 요로계에 칼슘·수산·요산 등의 무기질과 유기물이 결합해 생성되는 고형 물질입니다. 옆구리 통증, 혈뇨, 배뇨통 등이 주요 증상이며 크기와 위치에 따라 자연배출 또는 전문 치료를 결정합니다.</p>
+            <ul class="bullet-list">
+              <li>위치별 분류: 신장결석 · 요관결석 · 방광결석 · 요도결석</li>
+              <li>크기 및 폐색 여부에 따라 대기요법, ESWL, URS/RIRS 선택</li>
+            </ul>
+          </div>
+          <div style="border-radius:12px; overflow:hidden; border:1px solid var(--border);">
+            <img src="../../assets/img/clinic_operating_room.jpg" alt="요로결석 치료 안내" />
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="tab-diagnosis">
+        <h2 class="section-title">수술 전 정밀 검사 4종</h2>
+        <div class="grid-4" style="margin-top:24px;">
+          <div class="card"><span class="card__tag">STEP 01</span><h3 class="card__title">문진 · 신체검사</h3><p class="card__desc">옆구리 압통 및 병력 확인</p></div>
+          <div class="card"><span class="card__tag">STEP 02</span><h3 class="card__title">소변검사 (Urinalysis)</h3><p class="card__desc">미세혈뇨 및 요로감염 동반 확인</p></div>
+          <div class="card"><span class="card__tag">STEP 03</span><h3 class="card__title">혈액검사 (CBC, PNA)</h3><p class="card__desc">신기능 및 염증 수치 평가</p></div>
+          <div class="card"><span class="card__tag">STEP 04</span><h3 class="card__title">영상검사 4종</h3><p class="card__desc">단순복부촬영(KUB), 신장초음파, 조영제촬영(IVP), 요로조영 CT</p></div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="tab-treatment">
+        <h2 class="section-title">핵심 치료법 2종 비교</h2>
+        <div class="grid-2" style="margin-top:24px;">
+          <article class="card">
+            <span class="card__tag">NON-INVASIVE</span>
+            <h3 class="card__title">체외충격파쇄석술 (ESWL)</h3>
+            <p class="card__desc" style="margin-bottom:14px;">STEP 01 위치 확인 → STEP 02 충격파 분쇄 → STEP 03 소변으로 자연 배출</p>
+            <ul class="bullet-list">
+              <li>입원 및 마취가 불필요한 비침습적 시술</li>
+              <li>시술 시간이 짧고 반복 시술 가능</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="card__tag">MINIMALLY INVASIVE</span>
+            <h3 class="card__title">요관내시경 결석제거술 (URS)</h3>
+            <p class="card__desc" style="margin-bottom:14px;">홀뮴레이저(30W)와 가느다란 내시경으로 결석을 직접 파쇄·제거하는 절개 없는 최소침습 시술</p>
+            <ul class="bullet-list">
+              <li>주변 조직 손상을 줄이며 결석만 정확히 분쇄</li>
+              <li>연성내시경(RIRS)으로 신장·상부요관까지 접근</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="tab-equip">
+        <h2 class="section-title">보유 치료장비 7종</h2>
+        <div class="grid-3" style="margin-top:24px;">
+          <div class="card"><span class="card__tag">01</span><h3 class="card__title">씨암 (C-arm)</h3><p class="card__desc">실시간 영상 검사로 결석 위치 정밀 확인</p></div>
+          <div class="card"><span class="card__tag">02</span><h3 class="card__title">엔도매트 (ENDOMAT)</h3><p class="card__desc">관류(Perfusion)·흡인(Irrigation) 동시 제어</p></div>
+          <div class="card"><span class="card__tag">03</span><h3 class="card__title">홀뮴레이저 (30W)</h3><p class="card__desc">주변 조직 손상 없이 결석만 정확히 분쇄</p></div>
+          <div class="card"><span class="card__tag">04</span><h3 class="card__title">Storz 디지털 내시경</h3><p class="card__desc">HD 디지털 고해상도 영상 내시경 시스템</p></div>
+          <div class="card"><span class="card__tag">05</span><h3 class="card__title">리쏘뷰 (Lithovue)</h3><p class="card__desc">고해상도 디지털 일회용 연성요관내시경</p></div>
+          <div class="card"><span class="card__tag">06 · 07</span><h3 class="card__title">연성(RIRS) · 경성(URS)</h3><p class="card__desc">신장·상부요관 진입 연성내시경 및 직선 경성내시경</p></div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="content-container">
+        <div class="footer__info">상호: 강남J비뇨기과의원 | 대표원장: 박천진 | 사업자등록번호: <span class="en-num">120-90-16660</span> | TEL: <span class="en-num">02-3018-7575</span></div>
+        <div class="footer__copy">Copyright © 1999 GANGNAM J UROLOGY CLINIC. All rights reserved.</div>
+      </div>
+    </footer>
+  </main>
+
+  <nav class="mobile-bar" aria-label="모바일 빠른 메뉴">
+    <a href="tel:02-3018-7575" class="mobile-bar__btn"><span>전화</span></a>
+    <a href="sms:010-9190-7575" class="mobile-bar__btn"><span>문자</span></a>
+    <button type="button" class="mobile-bar__btn js-copy-kakao"><span>카톡복사</span></button>
+    <a href="consult.html?tab=reserve" class="mobile-bar__btn mobile-bar__btn--primary"><span>예약</span></a>
+  </nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="../script.js"></script>
+</body>
+</html>
