@@ -101,7 +101,7 @@
     });
   }
 
-  /* 5. 간편 예약 폼 (4개 필드 + 동의 체크) */
+  /* 5. 간편 예약 폼 (희망 날짜·메모 포함) & 1:1 비공개 수술상담 폼 */
   const reserveForm = document.getElementById('quickReserveForm');
   const reserveFeedback = document.getElementById('reserveFeedback');
   if (reserveForm && reserveFeedback) {
@@ -110,6 +110,8 @@
       const name = document.getElementById('resName').value.trim();
       const phone = document.getElementById('resPhone').value.trim();
       const subject = document.getElementById('resSubject').value;
+      const dateEl = document.getElementById('resDate');
+      const preferredDate = dateEl ? dateEl.value : '';
       const preferredTime = document.getElementById('resTime').value;
       const agree = document.getElementById('resAgree').checked;
 
@@ -124,9 +126,39 @@
         reserveFeedback.textContent = '개인정보 수집 및 이용에 동의해 주세요.';
         return;
       }
+      const dateLabel = preferredDate ? `${preferredDate} ` : '';
       reserveFeedback.classList.add('is-success');
-      reserveFeedback.textContent = `${name}님, [${subject} / ${preferredTime}] 사전 예약 요청이 접수되었습니다. 확인 후 ${phone}로 연락드리겠습니다.`;
+      reserveFeedback.textContent = `${name}님, [${subject} / ${dateLabel}${preferredTime}] 사전 예약 요청이 접수되었습니다. 확인 후 ${phone}로 연락드리겠습니다.`;
       reserveForm.reset();
+    });
+  }
+
+  const expertForm = document.getElementById('expertConsultForm');
+  const expertFeedback = document.getElementById('expertFeedback');
+  if (expertForm && expertFeedback) {
+    expertForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('expName').value.trim();
+      const phone = document.getElementById('expPhone').value.trim();
+      const category = document.getElementById('expCategory').value;
+      const reply = document.getElementById('expReply').value;
+      const content = document.getElementById('expContent').value.trim();
+      const agree = document.getElementById('expAgree').checked;
+
+      expertFeedback.className = 'form-feedback';
+      if (!name || !phone || !category || !content) {
+        expertFeedback.classList.add('is-error');
+        expertFeedback.textContent = '성함, 연락처, 상담 수술 분야, 상담 내용을 모두 입력해 주세요.';
+        return;
+      }
+      if (!agree) {
+        expertFeedback.classList.add('is-error');
+        expertFeedback.textContent = '개인정보 수집 및 이용에 동의해 주세요.';
+        return;
+      }
+      expertFeedback.classList.add('is-success');
+      expertFeedback.textContent = `${name}님의 [${category}] 1:1 비공개 수술상담이 접수되었습니다. (${reply} · ${phone})`;
+      expertForm.reset();
     });
   }
 

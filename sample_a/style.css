@@ -3167,12 +3167,23 @@ body:not(.home-v3) .form-group label {
 body:not(.home-v3) .form-control,
 body:not(.home-v3) input[type="text"],
 body:not(.home-v3) input[type="tel"],
+body:not(.home-v3) input[type="date"],
 body:not(.home-v3) select,
 body:not(.home-v3) textarea {
   background: rgba(10, 22, 40, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 12px;
   color: #FFFFFF;
+  color-scheme: dark;
+}
+
+body:not(.home-v3) textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  resize: vertical;
 }
 
 body:not(.home-v3) .btn-primary {
